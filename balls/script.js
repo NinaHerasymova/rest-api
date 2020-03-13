@@ -56,11 +56,27 @@ class Ball {
     this.y += this.speedY;
   }
 
+  collisionDetect() {
+    for (var j = 0; j < ballsArr.length; j++) {
+      if (!(this === ballsArr[j])) {
+        var dx = this.x - ballsArr[j].x;
+        var dy = this.y - ballsArr[j].y;
+        var distance = Math.sqrt(dx * dx + dy * dy);
+  
+        if (distance < this.radius + ballsArr[j].radius) {
+          this.speedX = -this.speedX;
+          this.speedY = -this.speedY;
+        }
+      }
+    }
+  }
+
   animate() {
     ctx.clearRect(0, 0, innerWidth, innerHeight);
     for (let i = 0; i < ballsArr.length; i++) {
       ballsArr[i].create();
       ballsArr[i].update();
+      ballsArr[i].collisionDetect();
     }
     myReq = requestAnimationFrame(() => this.animate());
   }
