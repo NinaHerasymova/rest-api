@@ -2,6 +2,8 @@ const area = document.querySelector('#play-area');
 const res = document.querySelector('.btn__reset');
 const ctx = area.getContext('2d');
 let ballsArr = [];
+let myReq;
+const collors = ['#fe2e00', '#0bfe1f', '#fef909', '#080afe'];
 let i = 0;
 
 class Ball {
@@ -9,6 +11,7 @@ class Ball {
     this.x = coordX;
     this.y = coordY;
     this.radius = Math.random() * (50 - 20) + 20;
+    this.defColor = '#fe2e00';
     this.weight = Math.ceil(
       ((2700 * 4) / 3) * Math.PI * Math.pow(this.radius / 100, 3)
     );
@@ -28,8 +31,6 @@ class Ball {
         this.speedX = -this.speedX;
         this.speedY = -this.speedY;
         break;
-      case 3:
-        break;
       default:
         break;
     }
@@ -38,15 +39,17 @@ class Ball {
   create() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    ctx.fillStyle = '#fe2e00';
+    ctx.fillStyle = this.defColor;
     ctx.fill();
   }
 
   update() {
     if (this.x + this.radius > area.width || this.x - this.radius < 0) {
+      this.defColor = this.colorRand();
       this.speedX = -this.speedX;
     }
     if (this.y + this.radius > area.width || this.y - this.radius < 0) {
+      this.defColor = this.colorRand();
       this.speedY = -this.speedY;
     }
     this.x += this.speedX;
@@ -59,12 +62,17 @@ class Ball {
       ballsArr[i].create();
       ballsArr[i].update();
     }
-    requestAnimationFrame(() => this.animate());
+    myReq = requestAnimationFrame(() => this.animate());
+  }
+
+  colorRand(){
+    return collors[Math.floor(Math.random() * collors.length)];
   }
 }
 
 area.addEventListener('click', event => {
   let newBall = new Ball(event.clientX, event.clientY);
+  newBall.defColor = newBall.colorRand();
   ballsArr.push(newBall);
   newBall.create();
   newBall.animate();
@@ -72,5 +80,7 @@ area.addEventListener('click', event => {
 });
 
 res.addEventListener('click', () => {
-  location.reload();
+  cancelAnimationFrame(myReq);
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  ballsArr = [];
 });
