@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500, 800|Nunito+Sans:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500, 800|Nunito+Sans:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="customer-quote-slider.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script src="src/css/customer-quote-slider.js"></script>
     <link rel="stylesheet" href="src/css/style.css">
     <title>Piroll</title>
 </head>
@@ -38,6 +44,80 @@
         </div>
     </header>
     <!-- / header -->
+
+    <!-- testimonials -->
+    <div class="testimonials">
+        <div class="testimonials-review" >
+            <div class=" testimonials-review-quotes" >
+
+                <div class="inner patient-quote flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="row">
+                                <h2 class="quote-title">
+                                    “ Outstanding job and exceeded all expectations. It was a pleasure
+                                    to work with them on a sizable first project and am looking
+                                    forward to start the next one asap.”
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <div  class="quote-author">
+                                    <p>
+                                        Michael
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row" >
+                                <h2 class="quote-title">
+                                    Our service is the best. Especially this
+                                    awesome slider which also moves by the time
+                                </h2>
+                            </div>
+                            <div class="row" >
+                                <div  class="quote-author">
+                                    <p>
+                                      Denys
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <h2 class="quote-title">
+                                    I hope you are doing great. Don't go outside.
+                                    There is coronavirus. Buy some antiseptik and
+                                    don't panic. Keep you and your relatives safe!
+                                </h2>
+                            </div>
+                            <div class="row" >
+                                <div  class="quote-author">
+                                    <p>
+                                       Some random guy
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="inner testimonials-clients">
+            <div class="inner testimonials-clients-logos">
+                <img   src="src/img/logo1.jpg">
+                <img   src="src/img/logo2.jpg">
+                <img   src="src/img/logo3.jpg">
+                <img   src="src/img/logo2.jpg">
+                <img  id="testimonials-clients-logos-right"  src="src/img/logo1.jpg">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="src/js/testimonials.js"></script>
+    <!-- /testimonials -->
 
 </body>
 </html>
