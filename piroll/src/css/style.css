@@ -387,7 +387,10 @@ template {
     height: 300px;
     margin-top: 90px;
     align-items: flex-start; }
+    .testimonials-clients img {
+      max-width: 100%; }
     .testimonials-clients-logos {
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap; }
       .testimonials-clients-logos img {

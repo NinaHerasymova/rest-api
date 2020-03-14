@@ -108,14 +108,16 @@ background: white;
         height: 300px;
         margin-top: 90px;
         align-items: flex-start;;
-
+        img {max-width:100%;}
         &-logos {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
                 img {
                     width: 120px;
                     height: 120px;
                     padding-right: 100px;
+
                 }
 
         }
