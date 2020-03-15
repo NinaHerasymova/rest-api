@@ -310,6 +310,12 @@
   i {
     font-size: 40px;
   }
+  h1 {
+    @include font-montserrat;
+  }
+  h4 {
+    @include font-nunitoSans;
+  }
 }
 //testimonials
 .flexslider {
