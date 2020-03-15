@@ -303,6 +303,8 @@ template {
 [hidden] {
   display: none; }
 
+/* Colors */
+/* Media queries */
 .inner {
   display: flex;
   max-width: 1180px;
@@ -311,48 +313,92 @@ template {
 /* header */
 .main-header {
   display: flex;
-  height: 670px;
-  align-items: flex-start; }
-  .main-header-wrap {
-    height: 470px;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-start;
+  background: url("../img/banner-background-1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 0 20px; }
+  .main-header-head {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px; }
-    .main-header-wrap-head {
-      width: 1180px;
+    align-items: center; }
+    .main-header-head-logo {
+      background-image: url("../img/logo.png");
+      width: 31px;
+      height: 25px; }
+    .main-header-head-navbar ul {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center; }
-      .main-header-wrap-head-logo {
-        background-image: url("../img/logo.png");
-        width: 31px;
-        height: 25px; }
-      .main-header-wrap-head-navbar ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none; }
-        .main-header-wrap-head-navbar ul li {
-          margin-right: 10px; }
-          .main-header-wrap-head-navbar ul li a {
-            font-size: 14px;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            color: #000;
-            text-decoration: none; }
-    .main-header-wrap-banner {
-      max-width: 400px; }
-      .main-header-wrap-banner-title {
-        font-family: 'Montserrat', sans-serif; }
-      .main-header-wrap-banner-content {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        height: 73px;
-        max-width: 380px; }
+      list-style-type: none; }
+      .main-header-head-navbar ul li {
+        margin-right: 10px; }
+        .main-header-head-navbar ul li a {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+          color: #000;
+          text-decoration: none; }
+  .main-header-content {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 680px; }
+    .main-header-content-title {
+      font-family: 'Montserrat', sans-serif; }
+    .main-header-content-description {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.7;
+      height: 73px;
+      max-width: 380px; }
+    .main-header-content-button {
+      background-color: #10c9c3;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: white;
+      padding: 14px 25px;
+      height: 15px;
+      width: 80px;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block; }
+    @media (max-width: 768px) {
+      .main-header-content {
+        margin: 0 110px;
+        font-size: 10px; } }
+
+/* / header */
+/* about us */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px; }
+  .about-us {
+    display: flex;
+    max-width: 620px;
+    flex-direction: column;
+    align-items: center; }
+    .about-us-title {
+      font-family: 'Montserrat', sans-serif; }
+    .about-us-description {
+      font-family: 'Nunito Sans', sans-serif;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.7; }
+    .about-us-sign {
+      background-image: url("../img/signature.png");
+      width: 223px;
+      height: 57px;
+      margin-top: 20px; }
 
 .cont {
   width: 1365px;
