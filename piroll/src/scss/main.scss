@@ -4,123 +4,497 @@
 
 @import 'mixins.scss';
 
-.inner{
-    display: flex;
-    max-width: 1180px;
-    margin: 0 auto;
+.inner {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 /* header */
-.main-header{
+.main-header {
+  display: flex;
+  height: 670px;
+  align-items: flex-start;
+  &-wrap {
+    height: 470px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    align-items: flex-start;
-    background: url('../img/banner-background-1.jpg') no-repeat 50% 50%;
-    background-size: cover;
-    padding: 0 20px;
-
-    &-head{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        &-logo{
-            background-image: url("../img/logo.png");
-            width: 31px;
-            height: 25px;
-        }
-        &-navbar{
-            ul{
-                display: flex;
-                flex-direction: row;
-                list-style-type: none;
-                li{
-                    margin-right: 10px;
-                    a{
-                        font-size: 14px;
-                        text-transform: uppercase;
-                        @include font-montserrat;
-                        font-weight: 800;
-                        color: $black;
-                        text-decoration: none;
-                    }
-                }
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 40px;
+    &-head {
+      width: 1180px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &-logo {
+        background-image: url('../img/logo.png');
+        width: 31px;
+        height: 25px;
+      }
+      &-navbar {
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          li {
+            margin-right: 10px;
+            a {
+              font-size: 14px;
+              text-transform: uppercase;
+              @include font-montserrat;
+              font-weight: 800;
+              color: $black;
+              text-decoration: none;
             }
+          }
         }
+      }
     }
-
-    &-content{
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        width: 680px;
-        
-        &-title{
-            @include font-montserrat;
-        }
-        &-description{
-            @include font-nunitoSans;
-            font-size: 16px;
-            font-weight: 700;
-            opacity: 0.7;
-            height: 73px;
-            max-width: 380px;
-        }
-        &-button{
-            background-color: $addition-color;
-            @include font-montserrat;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: white;
-            padding: 14px 25px;
-            height: 15px;
-            width: 80px;
-            margin-top: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        // tablets
-        @media (max-width: $screen-m-max){
-            margin: 0 110px;
-            font-size: 10px;
-        }
+    &-banner {
+      max-width: 400px;
+      &-title {
+        @include font-montserrat;
+      }
+      &-content {
+        @include font-nunitoSans;
+        font-size: 14px;
+        font-weight: 700;
+        height: 73px;
+        max-width: 380px;
+      }
     }
+  }
 }
-/* / header */
-
-/* about us */
-.about{
+//section_2_____//////////////
+//основной блок
+.cont {
+  width: 1365px;
+  margin: 0 auto;
+  background: url('../img/litterq.jpg') no-repeat;
+  background-size: 50%;
+  background-position: top right;
+  @include font-montserrat;
+}
+//prof-skills блок внутренний
+.prof-skills {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 570px;
+  //список скилов
+  &-info {
     display: flex;
+    flex-direction: column;
+    width: 50%; //смещен влево
     justify-content: center;
-    align-items: center;
-    height: 420px;
-
-    &-us{
-        display: flex;
-        max-width: 620px;
-        flex-direction: column;
-        align-items: center;
-        &-title{
-            @include font-montserrat;
-        }
-
-        &-description{
-            @include font-nunitoSans;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            opacity: 0.7;
-        }
-
-        &-sign{
-            background-image: url('../img/signature.png');
-            width: 223px;
-            height: 57px;
-            margin-top: 20px;
-        }
+    font-weight: 700;
+    font-size: 12px;
+    &-title {
+      //заголовок скилов
+      font-size: 30px;
     }
+    &-list {
+      //список скилов
+      &-ui {
+        margin-top: 40px;
+        //полоска с процентами
+        &:after {
+          content: url('../img/75.jpg');
+        }
+      }
+      &-web {
+        margin-top: 40px;
+        &:after {
+          content: url('../img/90.jpg');
+        }
+      }
+      &-marketing {
+        margin-top: 40px;
+        &:after {
+          content: url('../img/65.jpg');
+        }
+      }
+    }
+  }
 }
+//блок голубой с белыми иконками и текстом
+.statistic {
+  background: #00cac4;
+  //внутренний блок
+  &-items {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    //блок с количеством выполненных задач
+    &-completed {
+      @include statistic-items;
+      //количество, цифры
+      &-counter {
+        @include statistic-counter;
+      }
+      //иконка
+      &:before {
+        @include statistic-icons;
+        content: url('../img/case.png');
+      }
+    }
+    &-hours {
+      @include statistic-items;
+      &-counter {
+        @include statistic-counter;
+      }
+      &:before {
+        @include statistic-icons;
+        content: url('../img/clock.png');
+      }
+    }
+    &-feedbacks {
+      @include statistic-items;
+      &-counter {
+        @include statistic-counter;
+      }
+      &:before {
+        @include statistic-icons;
+        content: url('../img/star.png');
+      }
+    }
+    &-clients {
+      @include statistic-items;
+      &-counter {
+        @include statistic-counter;
+      }
+      &:before {
+        @include statistic-icons;
+        content: url('../img/heart.png');
+      }
+    }
+  }
+}
+//изображение проектов
+.works {
+  height: 600px;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  //проект
+  &-project1 {
+    background: url('../img/2ed1b891618647.5e36dca972ad6.jpg') no-repeat;
+    @include img-table;
+    //затемняется при наведении
+    &-mask {
+      @include hover-img;
+    }
+  }
+
+  &-project2 {
+    background: url('../img/2e54ba92354421.5e4997cced90b.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project3 {
+    background: url('../img/32062a92390025.5e4a9002b13c3.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project4 {
+    background: url('../img/41fedc63140537.5ab0021a8ff80.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project5 {
+    background: url('../img/StockSnap_0RH7B7U01C.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project6 {
+    background: url('../img/663ac091618647.5e36dca96be82.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project7 {
+    background: url('../img/d6b0bb92354421.5e4997cceaf3e.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+  &-project8 {
+    background: url('../img/4cb3f292265715.5e46ae2344f29.jpg') no-repeat;
+    @include img-table;
+    &-mask {
+      @include hover-img;
+    }
+  }
+}
+//загрузить больше работ
+.more {
+  height: 100px;
+  background-color: #f5f6f6;
+  color: #908f90;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //меняется на ховере
+  &:hover {
+    color: #00cac4;
+    cursor: pointer;
+  }
+}
+/* third part */
+#video-section {
+  padding: 100px 0 100px;
+  &-wrap {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      @include font-montserrat;
+    }
+
+    h3 {
+      @include font-nunitoSans;
+      text-align: center;
+      color: #ccc;
+      margin: 30px 0 50px;
+    }
+  }
+  iframe {
+    display: block;
+    max-width: 1440px;
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+}
+#progress-section {
+  background: #f3f3f3;
+  padding: 100px 0 100px;
+  &-wrap {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+.progress-list {
+  width: 19%;
+  padding: 3%;
+  text-align: center;
+  color: #797979;
+  @media only screen and (max-width: 1200px)  {
+    width: 44%;
+  }
+  i {
+    font-size: 40px;
+  }
+  h1 {
+    @include font-montserrat;
+  }
+  h4 {
+    @include font-nunitoSans;
+  }
+}
+//testimonials
+.flexslider {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  text-align: center;
+}
+.quote-title {
+  font-size: 40px;
+}
+.quote-author {
+  font-size: 27px;
+}
+.flex-control-paging li a {
+  background: 0;
+}
+.flex-control-paging li a.flex-active {
+  background: white;
+}
+.flex-control-paging li a:hover {
+  background: gainsboro;
+}
+
+.testimonials {
+  height: 950px;
+  width: 100%;
+
+  &-review {
+    background: #10c9c3;
+    height: 650px;
+    &-quotes {
+      padding-top: 200px;
+    }
+  }
+
+  &-clients {
+    height: 300px;
+    margin-top: 90px;
+    align-items: flex-start;
+    img {
+      max-width: 100%;
+    }
+    &-logos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      img {
+        width: 120px;
+        height: 120px;
+        padding-right: 100px;
+      }
+    }
+  }
+}
+#testimonials-clients-logos-right {
+  padding-right: 0px;
+}
+//testimonialsEnd
+
+//media/////
+@media all and (max-width: 1200px) {
+  .cont {
+    background-size: 100%; //картинка на всю ширину
+  }
+  .prof-skills {
+    justify-content: center;
+    backdrop-filter: blur(10px); //размытие фона
+    &-info {
+      font-size: 20px; //улучшение читабельности
+    }
+  }
+  .more {
+    font-size: 20px; //улучшение читабельности
+  }
+}
+@media all and (max-width: 980px) {
+  .prof-skills {
+    &-info {
+      font-size: 30px; //улучшение читабельности
+    }
+  }
+  .statistic {
+    justify-content: space-around;
+    &-items-hours {
+      @include statistic980;
+    }
+    &-items-completed {
+      @include statistic980;
+    }
+    &-items-feedbacks {
+      @include statistic980;
+    }
+    &-items-clients {
+      @include statistic980;
+    }
+  }
+  .more {
+    font-size: 30px; //улучшение читабельности
+  }
+}
+@media all and (max-width: 640px) {
+  .prof-skills {
+    &-info {
+      width: auto;
+      font-size: 30px; //улучшение читабельности
+      &-title {
+        font-size: 60px; //улучшение читабельности
+      }
+      &-list {
+        &-ui {
+          &:after {
+            content: ''; //убрала полоски с процентами
+          }
+          span {
+            font-size: 50px; //улучшение читабельности
+            color: #00cac4;
+          }
+        }
+        &-web {
+          &:after {
+            content: '';
+          }
+          span {
+            font-size: 50px;
+            color: #00cac4;
+          }
+        }
+        &-marketing {
+          &:after {
+            content: '';
+          }
+          span {
+            font-size: 50px;
+            color: #00cac4;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .statistic {
+    //пункты в колонку, посредине
+    &-items {
+      height: 400px;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: stretch;
+      margin-left: 30%;
+    }
+  }
+}
+@media all and (max-width: 320px) {
+  .prof-skills {
+    &-info {
+      font-size: 50px; //улучшение читабельности
+    }
+  }
+  .statistic {
+    &-items {
+      height: 500px;
+      margin-left: 20%;
+      &-hours {
+        @include statistic320;
+      }
+      &-completed {
+        @include statistic320;
+      }
+      &-feedbacks {
+        @include statistic320;
+      }
+      &-clients {
+        @include statistic320;
+      }
+    }
+  }
+  .more {
+    font-size: 50px; //улучшение читабельности
+  }
+}
+//section_2_____//////////////
