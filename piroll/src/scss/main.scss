@@ -11,61 +11,118 @@
 }
 
 /* header */
-.main-header {
-  display: flex;
-  height: 670px;
-  align-items: flex-start;
-  &-wrap {
-    height: 470px;
+.main-header{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 40px;
-    &-head {
-      width: 1180px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      &-logo {
-        background-image: url('../img/logo.png');
-        width: 31px;
-        height: 25px;
-      }
-      &-navbar {
-        ul {
-          display: flex;
-          flex-direction: row;
-          list-style-type: none;
-          li {
-            margin-right: 10px;
-            a {
-              font-size: 14px;
-              text-transform: uppercase;
-              @include font-montserrat;
-              font-weight: 800;
-              color: $black;
-              text-decoration: none;
-            }
-          }
+    height: 100vh;
+    align-items: flex-start;
+    background: url('../img/banner-background-1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    padding: 0 20px;
+
+    &-head{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &-logo{
+            background-image: url("../img/logo.png");
+            width: 31px;
+            height: 25px;
         }
-      }
+        &-navbar{
+            ul{
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                li{
+                    margin-right: 10px;
+                    a{
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        @include font-montserrat;
+                        font-weight: 800;
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
     }
-    &-banner {
-      max-width: 400px;
-      &-title {
-        @include font-montserrat;
-      }
-      &-content {
-        @include font-nunitoSans;
-        font-size: 14px;
-        font-weight: 700;
-        height: 73px;
-        max-width: 380px;
-      }
+
+    &-content{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 680px;
+        
+        &-title{
+            @include font-montserrat;
+        }
+        &-description{
+            @include font-nunitoSans;
+            font-size: 16px;
+            font-weight: 700;
+            opacity: 0.7;
+            height: 73px;
+            max-width: 380px;
+        }
+        &-button{
+            background-color: $addition-color;
+            @include font-montserrat;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: white;
+            padding: 14px 25px;
+            height: 15px;
+            width: 80px;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        // tablets
+        @media (max-width: $screen-m-max){
+            margin: 0 110px;
+            font-size: 10px;
+        }
     }
-  }
+}
+/* / header */
+
+/* about us */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+
+    &-us{
+        display: flex;
+        max-width: 620px;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            @include font-montserrat;
+        }
+
+        &-description{
+            @include font-nunitoSans;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            opacity: 0.7;
+        }
+
+        &-sign{
+            background-image: url('../img/signature.png');
+            width: 223px;
+            height: 57px;
+            margin-top: 20px;
+        }
+    }
 }
 //section_2_____//////////////
 //основной блок
