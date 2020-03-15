@@ -5,3 +5,67 @@
 @mixin font-nunitoSans {
     font-family: 'Nunito Sans', sans-serif;
 }
+@mixin statistic-items {
+    //пункты статистики
+    margin-left: 77px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 22px;
+}
+@mixin statistic-icons {
+    //иконки
+    position: absolute;
+    margin-left: -77px;
+}
+@mixin statistic-counter {
+    //цифры в статистике
+    font-size: 18px;
+    font-weight: 600;
+}
+@mixin img-table {
+    //стили изображение проектов
+    min-width: 341px;
+    height: 300px;
+    background-size: cover;
+    background-position: top center;
+}
+@mixin hover-img {
+    //стили ховера картинок
+    min-width: 341px;
+    height: 300px;
+    position: absolute;
+    opacity: 0;
+    background: url('../img/hover-eye.jpg') no-repeat;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+@mixin hover-img-turk {
+    //стили ховера картинок в home
+    min-width: 341px;
+    height: 300px;
+    position: absolute;
+    opacity: 0;
+    background: url('../img/hover-eye-turk.jpg') no-repeat;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+@mixin statistic980 {
+    //увеличение текста на 980
+    font-size: 30px;
+    &-counter {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+@mixin statistic320 {
+    //увеличение текста на 320
+    font-size: 50px;
+    &-counter {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+}
