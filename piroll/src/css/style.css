@@ -1080,59 +1080,58 @@ input::-webkit-input-placeholder {
     cursor: pointer; }
 
 /* third part */
-#video-section {
+.video-section {
   padding: 100px 0 100px; }
-  #video-section-wrap {
+  .video-section-wrap {
     max-width: 800px;
     width: 90%;
     margin: 0 auto; }
-    #video-section-wrap h1 {
+    .video-section-wrap h1 {
       font-size: 40px;
       text-align: center;
       font-family: 'Montserrat', sans-serif; }
-    #video-section-wrap h3 {
+    .video-section-wrap h3 {
       font-family: 'Nunito Sans', sans-serif;
       text-align: center;
       color: #ccc;
       margin: 30px 0 50px; }
-  #video-section-wrap-2 {
+  .video-section-frame {
     width: 90%;
     height: 0;
     max-width: 1440px;
     position: relative;
     padding-bottom: 56.25%;
     margin: 0 auto; }
-    #video-section-wrap-2 iframe {
+    .video-section-frame iframe {
       position: absolute;
       left: 0;
       right: 0;
       width: 100%;
       height: 100%; }
 
-#progress-section {
+.process-section {
   background: #f3f3f3;
   padding: 100px 0 100px; }
-  #progress-section-wrap {
+  .process-section-wrap {
     max-width: 1400px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto; }
-
-.progress-list {
-  width: 19%;
-  padding: 3%;
-  text-align: center;
-  color: #797979; }
-  @media only screen and (max-width: 1200px) {
-    .progress-list {
-      width: 44%; } }
-  .progress-list i {
-    font-size: 40px; }
-  .progress-list h1 {
-    font-family: 'Montserrat', sans-serif; }
-  .progress-list h4 {
-    font-family: 'Nunito Sans', sans-serif; }
+    .process-section-wrap-list {
+      width: 19%;
+      padding: 3%;
+      text-align: center;
+      color: #797979; }
+      @media only screen and (max-width: 1200px) {
+        .process-section-wrap-list {
+          width: 44%; } }
+      .process-section-wrap-list i {
+        font-size: 40px; }
+      .process-section-wrap-list h1 {
+        font-family: 'Montserrat', sans-serif; }
+      .process-section-wrap-list h4 {
+        font-family: 'Nunito Sans', sans-serif; }
 
 .flexslider {
   background-color: transparent;
