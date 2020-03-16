@@ -460,70 +460,20 @@
       max-width: 100%;
     }
     &-logos {
-      padding-left: 3%;
-      width: 60%;
+
+      width: 100%;
       margin:0 auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
       img {
+        padding-bottom: 3%;
         width: 120px;
         height: 120px;
         padding-right: 100px;
       }
     }
-  }
-}
-@media all and (max-width: 1670px) {
-  .testimonials-clients-logos {
-  img {
-    padding-right: 80px;
-  }
-  }
-}
-@media all and (max-width: 1536px) {
-  .testimonials-clients-logos {
-    width: 70%;
-    img {
-      padding-right: 80px;
-    }
-  }
-}
-@media all and (max-width: 1320px) {
-  .testimonials-clients-logos {
-    width: 75%;
-    img { padding-right: 80px;}
-  }
-}
-@media all and (max-width: 1232px) {
-  .testimonials-clients-logos {
-    width: 80%;
-    img { padding-right: 80px;}
-  }
-}
-@media all and (max-width: 1150px) {
-  .testimonials-clients-logos {
-    width: 85%;
-    img { padding-right: 60px;}
-  }
-}
-@media all and (max-width: 950px) {
-  .testimonials-clients-logos {
-    width: 90%;
-    img { padding-right: 45px;}
-  }
-}
-@media all and (max-width: 950px) {
-  .testimonials-clients-logos {
-    width: 100%;
-    img { padding-right: 80px;}
-  }
-}
-@media all and (max-width: 480px) {
-  .testimonials-clients-logos {
-    width: 100%;
-    padding-left:50px;
-    img { padding-right: 80px;}
   }
 }
 
