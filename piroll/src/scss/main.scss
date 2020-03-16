@@ -151,7 +151,7 @@
 //section_2_____//////////////
 //основной блок
 .cont {
-  width: 1365px;
+  width: 100%;
   margin: 0 auto;
   background: url('../img/litterq.jpg') no-repeat;
   background-size: 50%;
@@ -205,6 +205,8 @@
 //блок голубой с белыми иконками и текстом
 .statistic {
   background: #00cac4;
+  height: 100%;
+    padding: 100px;
   //внутренний блок
   &-items {
     max-width: 1180px;
@@ -213,7 +215,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 240px;
     //блок с количеством выполненных задач
     &-completed {
       @include statistic-items;
@@ -261,7 +262,7 @@
 }
 //изображение проектов
 .works {
-  height: 600px;
+  height: 100%;
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
@@ -327,7 +328,8 @@
 }
 //загрузить больше работ
 .more {
-  height: 100px;
+  height: 100%;
+  padding: 40px;
   background-color: #f5f6f6;
   color: #908f90;
   font-weight: 700;
@@ -623,6 +625,7 @@ input::-webkit-input-placeholder {
 }
 // footer
 //media/////
+//media/////
 @media all and (max-width: 1200px) {
   .cont {
     background-size: 100%; //картинка на всю ширину
@@ -637,6 +640,21 @@ input::-webkit-input-placeholder {
   .more {
     font-size: 20px; //улучшение читабельности
   }
+
+ 
+
+  .statistic-items-completed,
+  .statistic-items-hours,
+  .statistic-items-feedbacks,
+  .statistic-items-counter {
+    padding-right: 20px;
+  }
+
+  .statistic {
+    padding: 20px;
+  }
+
+  
 }
 @media all and (max-width: 980px) {
   .prof-skills {
@@ -662,15 +680,33 @@ input::-webkit-input-placeholder {
   .more {
     font-size: 30px; //улучшение читабельности
   }
+
+
+
+  .statistic-items-completed,
+  .statistic-items-hours,
+  .statistic-items-feedbacks,
+  .statistic-items-counter {
+    padding-top: 20px;
+  }
 }
 @media all and (max-width: 640px) {
+
+  .statistic-items-completed,
+  .statistic-items-hours,
+  .statistic-items-feedbacks,
+  .statistic-items-counter {
+    padding-top: 20px;
+  }
+  
+  .statistic-items {
+    justify-content: flex-start;
+  }
   .prof-skills {
     &-info {
       width: auto;
       font-size: 30px; //улучшение читабельности
-      &-title {
-        font-size: 60px; //улучшение читабельности
-      }
+      
       &-list {
         &-ui {
           &:after {
@@ -711,20 +747,18 @@ input::-webkit-input-placeholder {
       flex-direction: column;
       justify-content: space-around;
       align-items: stretch;
-      margin-left: 30%;
     }
   }
 }
 @media all and (max-width: 320px) {
   .prof-skills {
     &-info {
-      font-size: 50px; //улучшение читабельности
+      text-align: center; //улучшение читабельности
     }
   }
   .statistic {
     &-items {
       height: 500px;
-      margin-left: 20%;
       &-hours {
         @include statistic320;
       }
@@ -740,7 +774,7 @@ input::-webkit-input-placeholder {
     }
   }
   .more {
-    font-size: 50px; //улучшение читабельности
+    text-align: center; //улучшение читабельности
   }
 }
 //section_2_____//////////////
@@ -788,6 +822,13 @@ input::-webkit-input-placeholder {
 
   .testimonials-clients-logos:first-child {
     padding-left: 50px;
+  }
+
+  .statistic-items-completed,
+  .statistic-items-hours,
+  .statistic-items-feedbacks,
+  .statistic-items-counter {
+    padding-top: 20px;
   }
 }
 
@@ -1106,9 +1147,6 @@ input::-webkit-input-placeholder {
 
 }
 @media (max-width: 769px) {
-  .person{
-
-  }
 }
 input:hover{
   background-color:white;

@@ -26,13 +26,13 @@
 }
 @mixin img-table {
   //стили изображение проектов
-  min-width: 341px;
+  min-width: 320px;
   background-size: cover;
   background-position: top center;
 }
 @mixin hover-img {
   //стили ховера картинок
-  min-width: 341px;
+  min-width: 320px;
   height: 300px;
   position: absolute;
   opacity: 0;
@@ -78,14 +78,14 @@
 }
 @mixin img-table {
     //стили изображение проектов
-    min-width: 341px;
+    min-width: 320px;
     height: 300px;
     background-size: cover;
     background-position: top center;
 }
 @mixin hover-img {
     //стили ховера картинок
-    min-width: 341px;
+    min-width: 320px;
     height: 300px;
     position: absolute;
     opacity: 0;
@@ -96,7 +96,7 @@
 }
 @mixin hover-img-turk {
     //стили ховера картинок в home
-    min-width: 341px;
+    min-width: 320px;
     height: 300px;
     position: absolute;
     opacity: 0;
@@ -115,7 +115,6 @@
 }
 @mixin statistic320 {
     //увеличение текста на 320
-    font-size: 50px;
     &-counter {
         font-size: 50px;
         margin-bottom: 25px;
