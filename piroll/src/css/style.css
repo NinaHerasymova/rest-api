@@ -1217,10 +1217,10 @@ input::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
-  .input-conteiner input[type="text"]:nth-child(3) {
+  .input-conteiner input[type='text']:nth-child(3) {
     padding-bottom: 125px; }
 
-input[type="text"] {
+input[type='text'] {
   width: 46%;
   min-width: 320px;
   margin-top: 28px;
@@ -1389,13 +1389,13 @@ input::-webkit-input-placeholder {
     font-size: 50px; } }
 
 @media (max-width: 768px) and (min-width: 661px) {
-  input[type="text"] {
+  input[type='text'] {
     width: 100%; }
   .input-conteiner {
     padding: 0 25px 0 15px; } }
 
 @media (max-width: 660px) and (min-width: 480px) {
-  input[type="text"] {
+  input[type='text'] {
     width: 100%; }
   .input-conteiner {
     padding: 0 25px 0 15px; }
@@ -1405,7 +1405,7 @@ input::-webkit-input-placeholder {
     margin-top: 20px; } }
 
 @media (max-width: 479px) and (min-width: 0px) {
-  input[type="text"] {
+  input[type='text'] {
     width: 100%;
     margin: 0;
     min-width: 200px; }
@@ -1419,8 +1419,7 @@ input::-webkit-input-placeholder {
 @media (max-width: 413px) and (min-width: 0px) {
   .footer-email-and-phone {
     padding: 20px 70px 0 0; }
-  .footer-menu
-ul {
+  .footer-menu ul {
     padding-left: 15px;
     flex-direction: row; }
   .footer-menu li {
@@ -1429,3 +1428,193 @@ ul {
     border: none; }
   .footer a {
     border-bottom: 1px solid #fff; } }
+
+.home {
+  width: 1365px;
+  margin: 0 auto; }
+  .home-description {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center; }
+    .home-description-title {
+      font-size: 38px;
+      font-weight: 700; }
+    .home-description-items {
+      font-size: 18px;
+      color: #797979; }
+  .home-projects {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap; }
+    .home-projects-1 {
+      background: url("../img/cakes.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-1-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-1-mask:hover {
+          opacity: 0.7; }
+    .home-projects-2 {
+      background: url("../img/corgie.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-2-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-2-mask:hover {
+          opacity: 0.7; }
+    .home-projects-3 {
+      background: url("../img/monstera.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-3-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-3-mask:hover {
+          opacity: 0.7; }
+    .home-projects-4 {
+      background: url("../img/purple.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-4-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-4-mask:hover {
+          opacity: 0.7; }
+    .home-projects-5 {
+      background: url("../img/notebook.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-5-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-5-mask:hover {
+          opacity: 0.7; }
+    .home-projects-6 {
+      background: url("../img/palms.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-6-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-6-mask:hover {
+          opacity: 0.7; }
+    .home-projects-7 {
+      background: url("../img/rock.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-7-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-7-mask:hover {
+          opacity: 0.7; }
+    .home-projects-8 {
+      background: url("../img/sponge.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-8-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-8-mask:hover {
+          opacity: 0.7; }
+    .home-projects-9 {
+      background: url("../img/walls.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-9-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-9-mask:hover {
+          opacity: 0.7; }
+    .home-projects-10 {
+      background: url("../img/birck.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-10-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-10-mask:hover {
+          opacity: 0.7; }
+    .home-projects-11 {
+      background: url("../img/guitar.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-11-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-11-mask:hover {
+          opacity: 0.7; }
+    .home-projects-12 {
+      background: url("../img/palette.jpg") no-repeat;
+      min-width: 341px;
+      height: 300px;
+      background-size: cover;
+      background-position: top center; }
+      .home-projects-12-mask {
+        min-width: 341px;
+        height: 300px;
+        position: absolute;
+        opacity: 0;
+        background: url("../img/hover-eye-turk.jpg") no-repeat; }
+        .home-projects-12-mask:hover {
+          opacity: 0.7; }
