@@ -408,7 +408,7 @@
 }
 
 .testimonials {
-  height: 950px;
+  height: 100%;
   width: 100%;
 
   &-review {
@@ -420,8 +420,8 @@
   }
 
   &-clients {
-    height: 300px;
-    margin-top: 90px;
+    height: 100%;
+    margin: 90px 0 80px 0;
     align-items: flex-start;
     img {
       max-width: 100%;
@@ -700,74 +700,120 @@ input::-webkit-input-placeholder {
 }
 //section_2_____//////////////
 
-@media (max-width: 768px) and (min-width: 661px) {
-  input[type='text'] {
-    width: 100%;
+@media (max-width: 1000px) and (min-width: 769px) {
+  .testimonials-clients-logos:first-child {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 661px) { 
+  input[type="text"] {
+      width: 100%;
   }
 
   .input-conteiner {
-    padding: 0 25px 0 15px;
+      padding: 0 25px 0 15px;
+  }
+
+  .testimonials-clients-logos:first-child {
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 660px) and (min-width: 480px) {
-  input[type='text'] {
-    width: 100%;
+  input[type="text"] {
+      width: 100%;
   }
 
   .input-conteiner {
-    padding: 0 25px 0 15px;
+      padding: 0 25px 0 15px;
   }
 
   .footer-conteiner {
-    padding-top: 40px;
+      padding-top: 40px;
   }
 
   .footer-menu ul {
-    margin-top: 20px;
+      margin-top: 20px;
+  }
+
+  .testimonials-review-quotes {
+    padding-top: 150px;
+  }
+
+  .testimonials-clients-logos:first-child {
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 479px) and (min-width: 0px) {
-  input[type='text'] {
-    width: 100%;
-    margin: 0;
-    min-width: 200px;
+  input[type="text"] {
+      width: 100%;
+      margin: 0;
+      min-width: 200px;
   }
 
   .input-conteiner {
-    padding: 0 24px 0 15px;
+      padding: 0 24px 0 15px;
   }
 
   .footer-conteiner {
-    padding-top: 20px;
+      padding-top: 20px;
+      
   }
 
   .footer-menu ul {
-    padding-top: 30px;
+      padding-top: 30px;
   }
+
+  .testimonials-review-quotes {
+    padding-top: 50px;
+  }
+
+  .testimonials-clients {
+    margin: 10px 0;
+  }
+
+    .testimonials-clients-logos:first-child {
+    padding-left: 115px;
+  }
+
+
 }
 
-@media (max-width: 413px) and (min-width: 0px) {
+@media (max-width: 413px) and (min-width: 0px) { 
   .footer-email-and-phone {
-    padding: 20px 70px 0 0;
+      padding: 20px 70px 0 0;
   }
 
-  .footer-menu ul {
-    padding-left: 15px;
-    flex-direction: row;
+  .footer-menu 
+  ul{
+      padding-left: 15px;
+      flex-direction: row;
   }
 
-  .footer-menu li {
-    padding-left: 10px;
+  .footer-menu li{
+      padding-left: 10px;
   }
 
   .footer-menu ul li {
-    border: none;
+      border: none;
   }
 
   .footer a {
-    border-bottom: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+  }
+
+  .testimonials-clients-logos:first-child {
+    padding-left: 100px;
+  }
+
+  .testimonials-clients {
+    margin: 10px 0;
+  }
+
+  .testimonials-review-quotes {
+    padding-top: 50px;
   }
 }
 
