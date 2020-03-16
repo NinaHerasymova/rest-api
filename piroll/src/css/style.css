@@ -1640,3 +1640,111 @@ ul {
         background: url("../img/hover-eye-turk.jpg") no-repeat; }
         .home-projects-12-mask:hover {
           opacity: 0.7; }
+
+.person {
+  height: 450px;
+  width: 100%;
+  background-image: url("../img/person.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.wrap-p {
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .wrap-p p {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white; }
+
+.name-p {
+  margin: 0 auto;
+  padding-top: 5%;
+  font-size: 80px; }
+
+.description-p {
+  margin: 0 auto;
+  font-size: 25px;
+  width: 35%; }
+
+.resume {
+  height: 300px;
+  background-color: #10c9c3; }
+  .resume-logos {
+    padding-left: 100px; }
+    .resume-logos p {
+      width: 300px;
+      color: white;
+      padding-left: 15px;
+      padding-bottom: 0px; }
+    .resume-logos-number {
+      font-weight: bold; }
+    .resume-logos i {
+      padding-right: 30px; }
+
+.pe-stack {
+  padding-top: 100px;
+  width: 150px;
+  padding-right: 350px; }
+
+.about_us {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 750px; }
+  .about_us-img {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    float: left; }
+    .about_us-img-item {
+      height: 100%;
+      width: 100%; }
+  .about_us-text {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin-top: 10%;
+    padding-left: 4%; }
+    .about_us-text-title {
+      width: 50%;
+      font-size: 50px;
+      font-weight: bold; }
+    .about_us-text-description {
+      font-size: 25px;
+      color: gray;
+      width: 100%; }
+    .about_us-text-sign {
+      width: 50%;
+      height: 20%; }
+
+.need_project {
+  height: 70%;
+  width: 100%;
+  margin: 0 auto; }
+  .need_project-title {
+    width: 15%;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 5%; }
+  .need_project-description {
+    width: 40%;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: gray;
+    text-align: center; }
+  .need_project-button {
+    width: 15%;
+    height: 15%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+    .need_project-button input {
+      background-color: #10c9c3;
+      border: 0;
+      color: white;
+      font-size: 25px;
+      width: 100%;
+      height: 100%; }
