@@ -1164,11 +1164,14 @@ input::-webkit-input-placeholder {
       padding-top: 200px; }
   .testimonials-clients {
     height: 100%;
+    width: 100%;
     margin: 90px 0 80px 0;
     align-items: flex-start; }
     .testimonials-clients img {
       max-width: 100%; }
     .testimonials-clients-logos {
+      width: 60%;
+      margin: 0 auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; }
@@ -1720,7 +1723,7 @@ ul {
       height: 20%; }
 
 .need_project {
-  height: 70%;
+  height: 80%;
   width: 100%;
   margin: 0 auto; }
   .need_project-title {
@@ -1737,7 +1740,7 @@ ul {
     text-align: center; }
   .need_project-button {
     width: 15%;
-    height: 15%;
+    height: 30%;
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%; }
