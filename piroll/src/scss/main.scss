@@ -264,9 +264,10 @@
 .works {
   height: 100%;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   flex-wrap: wrap;
-  //проект
+  border: 0.2px solid transparent;
+
   &-project1 {
     background: url('../img/2ed1b891618647.5e36dca972ad6.jpg') no-repeat;
     @include img-table;
@@ -325,6 +326,16 @@
       @include hover-img;
     }
   }
+}
+
+.project-img {
+  width: 320px;
+}
+
+.project-img:hover {
+  // position: absolute;
+  opacity: 0;
+  background: url('../img/hover-eye.jpg') no-repeat;
 }
 //загрузить больше работ
 .more {
@@ -677,11 +688,10 @@ input::-webkit-input-placeholder {
       @include statistic980;
     }
   }
+
   .more {
     font-size: 30px; //улучшение читабельности
   }
-
-
 
   .statistic-items-completed,
   .statistic-items-hours,
@@ -785,9 +795,19 @@ input::-webkit-input-placeholder {
   }
 }
 
+@media (max-width: 947px) and (min-width: 769px) {
+  .project-img {
+    width: 50%; 
+  }
+}
+
 @media (max-width: 768px) and (min-width: 661px) { 
   input[type="text"] {
       width: 100%;
+  }
+
+  .project-img {
+    width: 100%;
   }
 
   .input-conteiner {
@@ -830,6 +850,9 @@ input::-webkit-input-placeholder {
   .statistic-items-counter {
     padding-top: 20px;
   }
+  .project-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 479px) and (min-width: 0px) {
@@ -862,6 +885,10 @@ input::-webkit-input-placeholder {
 
     .testimonials-clients-logos:first-child {
     padding-left: 115px;
+  }
+
+  .project-img {
+    width: 100%;
   }
 
 
