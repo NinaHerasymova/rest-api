@@ -1050,6 +1050,9 @@ input::-webkit-input-placeholder {
   .works-project {
     max-width: 25%;
     position: relative; }
+    @media only screen and (max-width: 480px) {
+      .works-project {
+        max-width: 50%; } }
     .works-project-img {
       width: 100%;
       height: 100%; }

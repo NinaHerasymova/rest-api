@@ -372,6 +372,9 @@
   &-project {
     max-width: 25%;
     position: relative;
+    @media only screen and (max-width: $screen-s) {
+      max-width: 50%;
+    }
     &-img {
       width: 100%;
       height: 100%;
