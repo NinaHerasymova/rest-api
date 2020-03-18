@@ -1150,7 +1150,9 @@ input::-webkit-input-placeholder {
   background-color: transparent;
   border: 0;
   color: white;
-  text-align: center; }
+  text-align: center;
+  max-width: 1366px;
+  margin: 0 auto; }
 
 .quote-title {
   font-size: 40px; }
@@ -1172,7 +1174,7 @@ input::-webkit-input-placeholder {
   width: 100%; }
   .testimonials-review {
     background: #10c9c3;
-    height: 650px; }
+    padding-bottom: 100px; }
     .testimonials-review-quotes {
       padding-top: 200px; }
   .testimonials-clients {
