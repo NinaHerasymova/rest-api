@@ -29,6 +29,7 @@
         &-navbar 
             ul {
             display: flex;
+            flex-wrap: wrap;
             li {
                 padding-left: 20px;
                 letter-spacing: inherit;

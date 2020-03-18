@@ -20,12 +20,25 @@
 
 <body>
   <!-- header -->
-  <header class="main-header">
-    <div class="main-header-head inner">
-      <a href="index.html">
-        <div class="main-header-head-logo"></div>
-      </a>
-      <nav class="main-header-head-navbar">
+  <div class="main-and-header">
+    <header class="nav-and-logo">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="./src/html/home.html">Home</a></li>
+          <li><a class="menu__item" href="about.html">About</a></li>
+          <li><a class="menu__item" href="./src/html/project_single.html">Work</a></li>
+          <li><a class="menu__item" href="#process">Process</a></li>
+          <li><a class="menu__item" href="#">Services</a></li>
+          <li><a class="menu__item" href="#testimonials">Testimonials</a></li>
+          <li><a class="menu__item" href="./src/html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <a href="../../index.html"> <div class="header-wap-logo"></div></a>
+      <nav class="header-wap-navbar">
         <ul>
           <li><a href="./src/html/home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -36,7 +49,7 @@
           <li><a href="./src/html/contact.html">Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
 
     <div class="main-header-content">
       <h1 class="main-header-content-title">We Design and Develop</h1>
@@ -47,7 +60,7 @@
       </section>
       <button href="" class="main-header-content-button">Contact us</button>
     </div>
-  </header>
+  </div>
   <!-- / header -->
 
   <!-- about us -->
