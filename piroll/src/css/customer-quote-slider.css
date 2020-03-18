@@ -53,7 +53,7 @@
   display: none;
 }
 .patient-quote.flexslider .flex-control-nav {
-
+  position: relative;
   z-index: 400;
 }
 .patient-quote.flexslider .flex-control-nav li a {
