@@ -70,6 +70,6 @@ socket.onmessage = function(event) {
                        : msTime.getMinutes()
                    }`;
     string.innerHTML += `<span style="color: ${color}"> ${author}:</span>${timeStr} @ ${text}`;
-    chat.prepend(string);
+    chat.append(string);
   }
 };
