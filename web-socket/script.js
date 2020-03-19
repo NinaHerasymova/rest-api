@@ -73,3 +73,14 @@ socket.onmessage = function(event) {
     chat.append(string);
   }
 };
+setInterval(function() {
+  if (socket.readyState !== 1) {
+    chat.insertAdjacentHTML(
+      'beforeend',
+      '<p style="color: red;">Sorry server is' + ' unavailable</p>'
+    );
+    input.setAttribute('disabled', 'disabled');
+    status.textContent = 'Error';
+    status.style.color = 'red';
+  }
+}, 3000);
