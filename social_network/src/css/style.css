@@ -1,3 +1,59 @@
+/* ----Fonts---- */
+@import url("../fonts/HelveticaNeue/stylesheet.css");
+
+/* ----/Fonts----*/
 body {
-    padding-top: 5rem;
+    padding-top: 30rem;
+    background-color: #0084b4;
+    font-family: HelveticaNeueCyr, sans-serif;
 }
+main {
+    background-color: #f5f8fa;
+}
+
+/* ----profile---- */
+.profile-bio-avatar {
+    margin-top: -50%;
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+}
+.profile-bio-avatar img {
+    width: 100%;
+    border-radius: 20px;
+}
+.profile-bio-location {
+
+}
+.profile-bio-location i {
+    width: 20px;
+}
+.profile-bio-website i {
+    width: 20px;
+}
+.profile-tweet-wrapper {
+    border: 1px solid #abd5e5;
+    border-radius: 15px;
+    background-color: rgba(0,132,180,0.14);
+}
+.profile-tweet-wrapper-title {
+    border: 1px solid #abd5e5;
+    background: #ffffff;
+}
+.profile-wrapper {
+    border: 1px solid #ebf0f3;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+.button-follow {
+    border: 1px solid #ebf0f3;
+    border-radius: 5px;
+    background-color: #fdfdfe;
+}
+.h7 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+/* ----/profile---- */
