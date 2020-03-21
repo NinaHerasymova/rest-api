@@ -51,16 +51,106 @@
 </nav>
 <main role="main" class="container-fluid">
     <div class="row">
-      <div style="background: black;height: 100px;" class="col-12 col-md-4 col-lg-3 offset-lg-1"></div>
-      <div style="background: black;height: 100px;" class="col-12 col-md-8 col-lg-7"></div>
+        <div class="col-12 col-md-4 col-xl-3 offset-xl-1">
+            <section class="d-flex flex-column col-10 profile-bio">
+                <div class="col-10 p-0 profile-bio-avatar">
+                    <img src="src/img/avatar.jpg">
+                </div>
+                <span class="h2 text-dark font-weight-light">Your Name hear</span>
+                <span class="h6 text-primary">@YourHandleHere</span>
+                <span class="h6 text-muted mb-4">Text: Your bio goes here in max 140 characters. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab.</span>
+                <span class="d-flex h6 profile-bio-location"><i class="fas fa-map-marker-alt text-primary"></i>Your location</span>
+                <span class="d-flex h6 profile-bio-website text-primary"><i
+                        class="fas fa-link"></i>yourwebsite.url</span>
+            </section>
+            <section class="profile-tweet mb-3">
+                <div class="col-10 p-3 profile-tweet-wrapper">
+                    <div class="profile-tweet-wrapper-title text-primary h6 m-0 p-3">Tweet to Your Name here</div>
+                </div>
+            </section>
+            <section class="profile-follow">
+                <div class="col-10 p-3 profile-wrapper">
+                    <span class="h6 text-dark">
+                        <span class="h4 font-weight-light">Who to follow</span>
+                        &middot
+                        <span class="text-primary">Refresh</span>
+                        &middot
+                        <span class="text-primary">View all</span>
+                    </span>
+                    <div class="media text-muted pt-3">
+                        <svg class="bd-placeholder-img mr-2 rounded" width="48" height="48"
+                             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#007bff"></rect>
+                            <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                        </svg>
+                        <p class="media-body d-flex flex-column pb-3 mb-0 small lh-125">
+                            <span class="h6">
+                                <strong class="text-dark">Giulio Bordonaro</strong>
+                                <span class="text-gray-dark"> @GiulioBx</span>
+                            </span>
+                            <button class="button-follow col-5 p-1"><i class="fas fa-user-plus text-primary"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <div class="media text-muted pt-3">
+                        <svg class="bd-placeholder-img mr-2 rounded" width="48" height="48"
+                             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#343a40"></rect>
+                            <text x="50%" y="50%" fill="#343a40" dy=".3em">32x32</text>
+                        </svg>
+                        <p class="media-body d-flex flex-column pb-3 mb-0 small lh-125">
+                            <strong class="h6 text-dark">Interesting User</strong>
+                            <span class="text-gray-dark h6"> @User</span>
+                            <button class="button-follow col-5 p-1"><i class="fas fa-user-plus text-primary"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <div class="media text-muted pt-3">
+                        <svg class="bd-placeholder-img mr-2 rounded" width="48" height="48"
+                             xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                             role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#dc3545"></rect>
+                            <text x="50%" y="50%" fill="#dc3545" dy=".3em">32x32</text>
+                        </svg>
+                        <p class="media-body  d-flex flex-column pb-3 mb-0 small lh-125">
+                            <strong class="h6 text-dark">Other User</strong>
+                            <span class="text-gray-dark h6"> @OtherUser</span>
+                            <button class="button-follow col-5 p-1"><i class="fas fa-user-plus text-primary"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <span class="h7 text-dark">
+                        <span class="text-primary">Popular accounts</span>
+                        &middot
+                        <span class="text-primary">Find friends</span>
+                    </span>
+                </div>
+            </section>
+            <section class="profile-trends">
+                <div class="col-10 p-3 profile-wrapper d-flex flex-column">
+                    <span class="h6 text-dark">
+                        <span class="h4 font-weight-light">Worldwide Trends</span>
+                        &middot
+                        <span class="text-primary">Change</span>
+                    </span>
+                    <span class="text-primary h6">#NewTwitter</span>
+                    <span class="text-primary h6">#GBX</span>
+                    <span class="text-primary h6">#graphicdesign</span>
+                    <span class="text-primary h6">#mockup</span>
+                    <span class="text-primary h6">#layout</span>
+                    <span class="text-primary h6">#PSD</span>
+
+                </div>
+            </section>
+        </div>
+        <div class="col-12 col-md-8 col-xl-7"></div>
     </div>
 </main><!-- /.container -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-<script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-        crossorigin="anonymous"></script>
+<script src="src/js/bootstrap.bundle.js"></script>
 </body>
 </html>
