@@ -11,6 +11,20 @@ main {
     background-color: #f5f8fa;
 }
 
+
+/* ----navigation----*/
+.nav-link-color{
+    color: #66757f;!important;
+}
+.nav-icons:before{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* ----/navigation----*/
+
+
+
 /* ----profile---- */
 .profile-bio-avatar {
     margin-top: -50%;
