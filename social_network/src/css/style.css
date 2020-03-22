@@ -68,6 +68,36 @@ main {
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
-
 }
 /* ----/profile---- */
+.person-menu{
+    padding-top: 2%;
+}
+.topnav div:hover {
+    border-bottom: 3px solid #0084b4;
+}
+.border-bottom{
+    border-bottom: 1px solid #d8e2e8;
+}
+.topnav div.active {
+    border-bottom: 3px solid #0084b4;
+}
+.tweet{
+    background-color: white;
+    border-radius: 5px;
+    border:1px solid #d8e2e8;
+}
+.flip-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.icon{
+    color:#ccd6dd
+}
+.link{
+   color:#0084b4;
+}
