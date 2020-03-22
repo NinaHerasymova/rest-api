@@ -14,7 +14,7 @@ main {
 
 /* ----navigation----*/
 .nav-link-color{
-    color: #66757f;!important;
+    color: #66757f !important;
 }
 .nav-icons:before{
     font-size: 20px;
@@ -34,9 +34,6 @@ main {
 .profile-bio-avatar img {
     width: 100%;
     border-radius: 20px;
-}
-.profile-bio-location {
-
 }
 .profile-bio-location i {
     width: 20px;
@@ -100,4 +97,8 @@ main {
 }
 .link{
    color:#0084b4;
+}
+
+.row {
+    margin:0;
 }
