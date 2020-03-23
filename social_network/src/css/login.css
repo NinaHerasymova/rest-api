@@ -1,0 +1,18 @@
+/* ----Fonts---- */
+@import url('../fonts/HelveticaNeue/stylesheet.css');
+
+/* ----/Fonts----*/
+body {
+    background-color: #e3ecf1;
+    font-family: HelveticaNeueCyr, sans-serif;
+}
+
+
+.main-section{
+    margin-top: 15rem;
+}
+
+.twitter-icon{
+    width: 40px;
+    font-size: 20px;
+}
