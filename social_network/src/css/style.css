@@ -81,6 +81,20 @@ main {
   border-radius: 5px;
   border: 1px solid #d8e2e8;
 }
+.placeholder::placeholder {
+  color: #d4d8db;
+}
+.search {
+  margin-left: 166px;
+  color: #d4d8db;
+  position: absolute;
+}
+.right-side {
+  flex-wrap: nowrap;
+}
+.visible {
+  background-color: #0084b4;
+}
 .flip-icon {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -98,19 +112,4 @@ main {
 
 .row {
   margin: 0;
-}
-
-.placeholder::placeholder {
-  color: #d4d8db;
-}
-.search {
-  margin-left: 166px;
-  color: #d4d8db;
-  position: absolute;
-}
-.right-side {
-  flex-wrap: nowrap;
-}
-.visible {
-  background-color: #0084b4;
 }
