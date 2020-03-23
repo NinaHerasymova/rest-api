@@ -22,7 +22,9 @@ input[type='text'] {
 label {
     color: #737475;
 }
-
+.visible {
+    background-color: #0084b4;
+}
 /* ----navigation----*/
 .nav-link-color {
   color: #66757f !important;
