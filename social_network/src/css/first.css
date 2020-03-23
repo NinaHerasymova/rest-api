@@ -1,0 +1,17 @@
+body {
+    background-color: #e3edf0;
+    font-family: HelveticaNeueCyr, sans-serif;
+  }
+
+  a {
+    color: #fff;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal-body {
+    margin-top: 100px;
+}
