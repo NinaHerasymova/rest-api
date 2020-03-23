@@ -46,3 +46,10 @@ body {
   top: auto;
   height: 100%;
 }
+.click_area {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+}
