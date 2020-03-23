@@ -1,0 +1,71 @@
+.patient-quote.flexslider {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color:#fff;
+  opacity:1;
+}
+.flexslider{
+  background-color: transparent;
+  color:white;
+}
+.h2{
+  color:white;
+}
+.pager {
+  display:none;
+}
+.quote-title{
+  color:white;
+}
+.patient-quote ul li {
+
+  color: #fff;
+  padding: 20px 0 40px;
+  margin-bottom: 20px !important;
+}
+.patient-quote h2.quote-title {
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 32px;
+  border-bottom: none;
+  margin: 0 auto;
+  padding-bottom:0px;
+  margin-bottom:10px;
+  width:90%;
+  opacity:1;
+  text-transform: none;
+}
+.flexslider .slides p {
+  font-size:25px;
+  margin-bottom:5px;
+  display: inline;
+}
+.patient-quote .patient-info {
+  font-style: italic;
+  margin-bottom:0px;
+  font-size: 20px;
+}
+.topPager,
+.bottomPager,
+.patient-quote.flexslider .flex-direction-nav {
+  display: none;
+}
+.patient-quote.flexslider .flex-control-nav {
+  position: relative;
+  z-index: 400;
+}
+.patient-quote.flexslider .flex-control-nav li a {
+
+  border: 2px solid #fff;
+  box-shadow: none !important;
+}
+.patient-quote.flexslider .flex-control-nav li a.flex-active {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.mainContent {
+  padding-top: 20px;
+}
+
