@@ -28,7 +28,7 @@ const paths = {
     html: `${BUILD}/html/`
   },
   src: {
-    scss: `${SRC}/scss/main.scss`,
+    scss: `${SRC}/scss/*.scss`,
     js: `${SRC}/js/index.js`,
     img: `${SRC}/img/**/*`,
     public: `${PUBLIC}/**/*`
