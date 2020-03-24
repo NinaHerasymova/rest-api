@@ -1,13 +1,16 @@
 /* ----Fonts---- */
 @import url('../fonts/HelveticaNeue/stylesheet.css');
+@import url('../scss/index.scss');
+@import url('../scss/login.scss');
+@import url('../scss/register.scss');
 
 /* ----/Fonts----*/
-body {
+.main-body {
   padding-top: 30rem;
   background-color: #0084b4;
   font-family: HelveticaNeueCyr, sans-serif;
 }
-main {
+.main {
   background-color: #f5f8fa;
 }
 
