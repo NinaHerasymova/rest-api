@@ -82,6 +82,11 @@
   border-radius: 5px;
   border: 1px solid #d8e2e8;
 }
+.placeholder {
+  color: #d4d8db;
+  background-color: #a3acb2;
+  padding-left: 15px !important;
+}
 .placeholder::placeholder {
   color: #d4d8db;
 }
@@ -113,4 +118,12 @@
 
 .row {
   margin: 0;
+}
+.twit-form {
+  width: 100%;
+}
+
+.flex-tweet {
+  display: flex;
+  flex-direction: column;
 }
