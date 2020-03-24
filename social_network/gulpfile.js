@@ -25,7 +25,7 @@ const paths = {
     css: `${BUILD}/css/`,
     img: `${BUILD}/img/`,
     js: `${BUILD}/js/`,
-    html: `${BUILD}/`
+    html: `${BUILD}/html/`
   },
   src: {
     scss: `${SRC}/scss/main.scss`,
@@ -43,7 +43,7 @@ const paths = {
     css: `${BUILD}/**/*.css`,
     js: `${BUILD}/**/*.js`,
     img: `${BUILD}/img/**/*`,
-    html: `${BUILD}/*.html`
+    html: `${BUILD}/html/*.html`
   }
 };
 
@@ -157,10 +157,20 @@ gulp.task('fileInclude', callback => {
   callback();
 });
 
+gulp.task('fileHTML', callback => {
+  gulp
+    .src([SRC + '/html/pages/*.html'])
+
+    .pipe(gulp.dest(paths.build.html));
+
+  callback();
+});
+
 gulp.task(
   'build',
   gulp.series(
     'clean',
+    'fileHTML',
     'fileInclude',
     gulp.parallel('copy', 'styles', 'img', 'scripts')
   )
@@ -168,6 +178,7 @@ gulp.task(
 
 gulp.task('watch', () => {
   gulp.watch(paths.compileWatch.html, gulp.series('fileInclude'));
+  gulp.watch(paths.compileWatch.html, gulp.series('fileHTML'));
   gulp.watch(paths.compileWatch.scss, gulp.series('styles'));
   gulp.watch(paths.compileWatch.js, gulp.series('scripts'));
   gulp.watch(paths.compileWatch.img, gulp.series('img'));
