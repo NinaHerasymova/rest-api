@@ -5,6 +5,7 @@
     "start": "gulp",
     "clean": "gulp clean",
     "build": "gulp build",
+    "watch": "gulp watch",
     "test": "nyc mocha --opts ./mocha.opts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -7,11 +7,11 @@
   color: #fff;
 }
 
+.focus-none:focus{
+  box-shadow: none;
+}
+
 .index-button:hover {
   text-decoration: none;
   color: #fff;
-}
-
-.modal-body {
-  margin-top: 100px;
 }
