@@ -1,7 +1,9 @@
 let createBtn = document.getElementById('add-tweet');
 let formTweet = document.querySelectorAll('.tweet-form');
+let searchInput = document.getElementById('search')
 let roots = document.getElementById('root');
 let time = new Date();
+let search = false;
 
 function tweet() {
   if (formTweet[0].value === '') {
@@ -41,5 +43,22 @@ function tweet() {
     formTweet[0].value = '';
   }
 }
+
+
+searchInput.addEventListener('keypress', e =>{
+  if(e.keyCode === 13){
+      if(search === false){
+          search = searchInput.value;  
+          // client.innerHTML = `Your nickname ${user}`;
+          searchInput.value = '';
+          console.log(keyCode)
+          return
+      }
+      // if(input.value === ''){
+      //   e.preventDefault()
+      // }
+      // input.value = ''
+  }
+})
 
 createBtn.addEventListener('click', tweet);
