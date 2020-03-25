@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <title>Starter Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/color/48/000000/twitter.png" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9317b04617.js" crossorigin="anonymous"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="inform-body">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+        <div class="col-12 col-md-11 col-xl-10 offset-xl-1">
+            <button class="navbar-toggler visible" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary font-weight-bold" href="#"><i
+                                class="fas fa-home nav-icons"></i>Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary font-weight-bold" href="#"><i
+                                class="fas fa-at nav-icons"></i>Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary font-weight-bold" href="#"><i
+                                class="fas fa-hashtag nav-icons"></i>Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary font-weight-bold" href="#"><i
+                                class="fas fa-user nav-icons"></i>Me</a>
+                    </li>
+                </ul>
+                <div class="nav-item mr-auto ">
+                    <a class="nav-link text-secondary font-weight-bold mx-auto" href="#"><i
+                            class="fab fa-twitter text-info nav-icons" style="color:#0084b4 !important"></i></a>
+                </div>
+                <form class="form-inline my-2 my-lg-0 right-side">
+                    <input class="form-control mr-sm-2 bg-secondary rounded-pill placeholder" type="text"
+                        placeholder="Search" aria-label="Search" />
+                    <i class="fas fa-search search"></i>
+                    <button class="btn my-2 my-sm-0" type="submit">
+                        <i class="fas fa-envelope text-secondary nav-icons" style="color:#A3ACB2"></i>
+                    </button>
+                    <button class="btn my-2 my-sm-0" type="submit">
+                        <i class="fas fa-cog text-secondary nav-icons"></i>
+                    </button>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="button"
+                        style="background-color: #0084B4; border: none;" data-toggle="modal"
+                        data-target=".login-or-reg">
+                        <i class="fas fa-feather-alt text-light"></i>
+                    </button>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="button"
+                        style="background-color: #0084B4; border: none;" data-toggle="modal" data-target=".modal-tweet">
+                        <i class="fas fa-feather-alt text-light"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main role="main" class="container-fluid main">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 offset-xl-1">
+                <section class="d-flex flex-column col-12 profile-bio">
+                    <div class="col-12 p-0 profile-bio-avatar">
+                        <img src="../img/avatar.jpg" />
+                    </div>
+                    <div class="col-12 p-0 h-50 profile-description">
+                        <span class="h2 text-dark font-weight-light">Your Name</span>
+                    <span class="h6 link">@YourHandle</span>
+                    </div>                  
+
+                </section>
+                <section class="profile-tweet mb-3">
+
+                </section>
+            </div>
+            <div class="col-12 col-md-8 col-xl-7 ">
+                <div class="row person-menu border-bottom">
+                    <div class="col-md-8 col-lg-8 col-sm-12">
+
+                    </div>
+
+                    <div class="password-inform col-12 col-md-11 col-xl-7 offset-xl-1 mb-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Personal information</h1>
+                        </div>
+                        <div class="modal-body-inform">
+                            <form class="needs-validation" novalidate="">
+                                <div class="row">
+                                    <div class="col-md-6 mt-4 mb-5">
+                                        <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                            value="" required="">
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-4 mb-5">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last name"
+                                            value="" required="">
+                                        <div class="invalid-feedback">
+                                            Valid last name is required.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+
+                                <div class="data">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="username" placeholder="Username"
+                                            required="">
+                                        <div class="invalid-feedback" style="width: 100%;">
+                                            Your username is required.
+                                        </div>
+                                    </div>
+                                    <label>Username must be at least three(3) characters long and must can contain one
+                                        underscore and number</label>
+                                </div>
+                                <div class="data">
+                                    <input type="password" class="form-control" id="pass" placeholder="Bio"
+                                        required="">
+                                    <label></label>
+                                </div>
+                                <div class="data mb-5">
+                                    <input type="password" class="form-control" id="pass" placeholder="Date of birth">
+                                </div> <a href="#" class="btn btn-primary rounded-pill font-weight-bold"
+                                    role="button" aria-pressed="true">UPDATE</a>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="password-inform col-12 col-md-11 col-xl-7 offset-xl-1 mb-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Change password</h1>
+                        </div>
+                        <div class="modal-body-inform">
+                            <form class="needs-validation" novalidate="">
+                                <div class="data mb-5">
+                                    <input type="password" class="form-control" id="pass" placeholder="Current password">
+                                </div>
+                                <div class="data">
+                                    <input type="password" class="form-control" id="pass" placeholder="Password" required="">
+                                    <label>Password must be at least six(6) characters long and must contain one underscore and number</label>
+                                </div>
+                                <div class="data mb-5">
+                                    <input type="password" class="form-control" id="pass" placeholder="Confirm password">
+                                </div>         
+                                      <a href="#" class="btn btn-primary rounded-pill font-weight-bold" role="button" aria-pressed="true">CHANGE PASSWORD</a>                    
+                          </form>
+                        </div>
+                                            </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+                <script>
+                    window.jQuery ||
+                    document.write(
+                        '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
+                    );
+                </script>
+                <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+                <script src="../js/index.js"></script>
+</body>
+
+</html>
