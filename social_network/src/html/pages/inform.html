@@ -39,116 +39,112 @@
             </form>
         </div>
     </nav>
-    <main role="main" class="container-fluid main">
+    <main role="main" class="container-fluid profile-body-main bg-light">
         <div class="row">
-            <div class="col-12 col-md-4 col-xl-3 offset-xl-1">
-                <section class="d-flex flex-column col-12 profile-bio">
-
-                    <div class="col-12 p-0 h-50 profile-description">
-                        <span class="h2 text-dark font-weight-light">Your Name</span>
-                        <span class="h6 link">@YourHandle</span>
+            <div class="col-12 col-md-4 col-lg-2 col-xl-2 offset-xl-1">
+                <section class="d-flex flex-column position-relative col-12 profile-bio">
+                    <div class="p-0 profile-bio-avatar-2 rounded-circle position-absolute">
+                        <img class="rounded-circle" src="../img/avatar.jpg" />
                     </div>
-
-                </section>
-                <section class="profile-tweet mb-3">
-
+                    <span class="h3 text-dark font-weight-bold mt-5 pt-3">Your Name</span>
+                    <span class="h7 link">@Test1</span>
+                    <span class="h7 text-dark font-weight-bold mb-4">Text: Your bio goes here in max 140
+                        characters.</span>
                 </section>
             </div>
-            <div class="col-12 col-md-8 col-xl-7 ">
-                <div class="row person-menu border-bottom">
-                    <div class="col-md-8 col-lg-8 col-sm-12">
-
+            <div>
+                <div class="password-inform col-12 col-md-11 col-xl-8 offset-xl-1 mb-5 mt-3">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Personal information</h1>
                     </div>
-
-                    <div class="password-inform col-12 col-md-11 col-xl-8 offset-xl-1 mb-5">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Personal information</h1>
-                        </div>
-                        <div class="modal-body-inform">
-                            <form class="needs-validation" novalidate="">
-                                <div class="row">
-                                    <div class="col-md-6 mt-4">
-                                        <label for="firstname">Firstname</label>
-                                        <input type="text" class="form-control" id="firstName" value="Your" required="">
-                                        <div class="invalid-feedback">
-                                            Valid first name is required.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mt-4">
-                                        <label for="lastName">Lastname</label>
-                                        <input type="text" class="form-control" id="lastName" value="Name" required="">
-                                        <div class="invalid-feedback">
-                                            Valid last name is required.
-                                        </div>
+                    <div class="modal-body-inform">
+                        <form class="needs-validation" novalidate="">
+                            <div class="row">
+                                <div class="col-md-6 mt-4">
+                                    <label for="firstname">Firstname</label>
+                                    <input type="text" class="form-control" id="firstName" value="Your" required="">
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
                                     </div>
                                 </div>
-
-                                <div class="data">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" class="form-control" id="email" value="dddddddd@dmail.com">
-                                </div>
-
-                                <div class="data">
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" value="Thhhghjkjhgjklhh"
-                                        required="">
-                                    <div class="invalid-feedback" style="width: 100%;">
-                                        Your username is required.
+                                <div class="col-md-6 mt-4">
+                                    <label for="lastName">Lastname</label>
+                                    <input type="text" class="form-control" id="lastName" value="Name" required="">
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
                                     </div>
-                                    <label>Username must be at least three(3) characters long and must can contain one
-                                        underscore and number</label>
                                 </div>
-
-
-                                <div class="data">
-                                    <label for="bio">Bio</label>
-                                    <input type="password" class="form-control" id="bio" required="">
-                                    <label></label>
+                            </div>
+            
+                            <div class="data">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" value="dddddddd@dmail.com">
+                            </div>
+            
+                            <div class="data">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" value="Thhhghjkjhgjklhh" required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
                                 </div>
-                                <div class="data mb-5">
-                                    <label for="birth">Date of birth</label>
-                                    <input type="text" class="form-control" id="birth" value="23.14.5678" />
-                                </div> <a href="#" class="btn btn-primary rounded-pill font-weight-bold" role="button"
-                                    aria-pressed="true">UPDATE</a>
-                            </form>
-                        </div>
-
+                                <label>Username must be at least three(3) characters long and must can contain one
+                                    underscore and number</label>
+                            </div>
+            
+            
+                            <div class="data">
+                                <label for="bio">Bio</label>
+                                <input type="password" class="form-control" id="bio" required="">
+                                <label></label>
+                            </div>
+                            <div class="data mb-5">
+                                <label for="birth">Date of birth</label>
+                                <input type="text" class="form-control" id="birth" value="23.14.5678" />
+                            </div> <a href="#" class="btn btn-primary rounded-pill font-weight-bold" role="button"
+                                aria-pressed="true">UPDATE</a>
+                        </form>
                     </div>
-                    <div class="password-inform col-12 col-md-11 col-xl-8 offset-xl-1 mb-5">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Change password</h1>
-                        </div>
-                        <div class="modal-body-inform">
-                            <form class="needs-validation" novalidate="">
-                                <div class="data mb-5">
-                                    <label for="currPass">Current password</label>
-                                    <input type="password" class="form-control" id="currPass" />
-                                </div>
-                                <div class="data">
-                                    <label for="newPass">Password</label>
-                                    <input type="password" class="form-control" id="newPass"
-                                        required="">
-                                    <label>Password must be at least six(6) characters long and must contain one
-                                        underscore and number</label>
-                                </div>
-                                <div class="data">
-                                    <label for="confPass">Confirm password</label>
-                                    <input type="password" class="form-control mb-5" id="confPass"/>
+            
+                </div>
+                <div class="password-inform col-12 col-md-11 col-xl-8 offset-xl-1 mb-5">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Change password</h1>
+                    </div>
+                    <div class="modal-body-inform">
+                        <form class="needs-validation" novalidate="">
+                            <div class="data mb-5">
+                                <label for="currPass">Current password</label>
+                                <input type="password" class="form-control" id="currPass" />
+                            </div>
+                            <div class="data">
+                                <label for="newPass">Password</label>
+                                <input type="password" class="form-control" id="newPass" required="">
+                                <label>Password must be at least six(6) characters long and must contain one
+                                    underscore and number</label>
+                            </div>
+                            <div class="data">
+                                <label for="confPass">Confirm password</label>
+                                <input type="password" class="form-control mb-5" id="confPass" />
                                 <a href="#" class="btn btn-primary rounded-pill font-weight-bold" role="button"
                                     aria-pressed="true">CHANGE PASSWORD</a>
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-                <script>
-                    window.jQuery ||
-                        document.write(
-                            '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
-                        );
-                </script>
-                <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
-                <script src="../js/index.js"></script>
+            </div>
+            
+        </div>
+    </main>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        window.jQuery ||
+            document.write(
+                '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
+            );
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
