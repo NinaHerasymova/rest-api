@@ -10,7 +10,10 @@
   font-size: 20px;
   margin-right: 5px;
 }
-
+.top-shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding-top: 0.5rem;
+}
 .modal-body-inform {
   padding-bottom: 15px;
 }
