@@ -37,7 +37,8 @@ const paths = {
     scss: `${SRC}/scss/**/*.scss`,
     js: `${SRC}/js/**/*.js`,
     img: `${SRC}/img/**/*`,
-    html: `${SRC}/html/*.html`
+    html: `${SRC}/html/*.html`,
+    html: `${SRC}/html/pages/*.html`
   },
   reloadWatch: {
     css: `${BUILD}/**/*.css`,
