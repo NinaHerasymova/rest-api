@@ -1,20 +1,9 @@
-@import url('../fonts/HelveticaNeue/stylesheet.css');
-@import url('../scss/index.scss');
-@import url('../scss/login.scss');
-@import url('../scss/register.scss');
-@import url('../scss/search.scss');
-
-/* ----/Fonts----*/
-body {
+.profile-body {
   padding-top: 30rem;
   background-color: #0084b4;
   font-family: HelveticaNeueCyr, sans-serif;
 }
-main {
-  background-color: #f5f8fa;
-}
 
-/* ----navigation----*/
 .nav-link-color {
   color: #66757f !important;
 }
@@ -89,7 +78,6 @@ main {
   background-color: #a3acb2;
   padding-left: 15px !important;
 }
-
 .placeholder::placeholder {
   color: #d4d8db;
 }
@@ -121,4 +109,19 @@ main {
 
 .row {
   margin: 0;
+}
+.twit-form {
+  width: 100%;
+}
+
+.flex-tweet {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body-inform {
+  padding-bottom: 15px;
+}
+.password-inform {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
