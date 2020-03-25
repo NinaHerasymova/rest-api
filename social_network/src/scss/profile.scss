@@ -1,13 +1,23 @@
 /* tweets, following, followers */
 
 .profile-body{
-  padding-top: 30rem;
-  background-color: #0084b4;
-  font-family: HelveticaNeueCyr, sans-serif;
+   padding-top: 30rem;
+   background-color: #0084b4;
+   font-family: HelveticaNeueCyr, sans-serif;
   &-main{
     min-height: 500px;
+    &-advertise{
+      color:gray;
+      &-hr{
+        width:100%;
+        height:5px;
+      }
+      &-span {
+        color: yellow;
+      }
+    }
   }
-}
+ }
 
 .navbar-div{
   display: flex;
