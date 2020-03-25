@@ -122,3 +122,20 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 768px)  {
+  .profile-tweet {
+    display: none;
+  }
+  .profile-follow {
+    display: none;
+  }
+  .profile-trends {
+    display: none;
+  }
+  .profile-bio-location {
+    display: none!important;
+  }
+  .profile-bio-website {
+    display: none!important;
+  }
+}
