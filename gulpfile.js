@@ -190,7 +190,7 @@ gulp.task('serve', () => {
     server: {
       baseDir: './build/'
     },
-    open: false
+    open: 'external'
   });
 
   browserSync.watch(paths.reloadWatch.css).on('change', reload);
