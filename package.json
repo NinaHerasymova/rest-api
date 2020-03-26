@@ -79,9 +79,5 @@
     "husky": "4.2.3",
     "lint-staged": "10.0.8",
     "prettier": "1.19.1"
-  },
-  "main": "index.js",
-  "repository": "https://github.com/NinaHerasymova/rest-api.git",
-  "author": "Nina Herasymova <predvoditeldvoryanstva@gmail.com>",
-  "license": "MIT"
+  }
 }

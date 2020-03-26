@@ -16,9 +16,9 @@ const gulpUglify = require('gulp-uglify');
 const gulpSourcemaps = require('gulp-sourcemaps');
 const gulpBabel = require('gulp-babel');
 
-const SRC = './social_network/src';
+const SRC = './src';
 const BUILD = './build';
-const PUBLIC = './social_network/public';
+const PUBLIC = './public';
 const paths = {
   build: {
     root: `${BUILD}/`,
@@ -31,7 +31,7 @@ const paths = {
     scss: `${SRC}/scss/*.scss`,
     js: `${SRC}/js/index.js`,
     img: `${SRC}/img/**/*`,
-    public: `${PUBLIC}/**/**`
+    public: `${PUBLIC}/**/*`
   },
   compileWatch: {
     scss: `${SRC}/scss/**/*.scss`,
@@ -125,7 +125,7 @@ gulp.task('clean', () => del([paths.build.root], { dot: true }));
 gulp.task('copy', () => {
   return gulp
     .src(paths.src.public)
-    .pipe(copy(paths.build.root, { prefix: 2 }))
+    .pipe(copy(paths.build.root, { prefix: 1 }))
     .pipe(verify());
 });
 
