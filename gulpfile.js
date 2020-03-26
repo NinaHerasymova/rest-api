@@ -189,7 +189,7 @@ gulp.task('serve', () => {
   browserSync.init({
     server: {
       baseDir: './build/'
-    }
+    },
     open: false
   });
 
