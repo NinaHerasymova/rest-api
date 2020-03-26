@@ -1,1 +1,1 @@
-web: build/index.js
+web: yarn start
