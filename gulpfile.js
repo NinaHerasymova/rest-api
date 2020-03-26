@@ -187,10 +187,10 @@ gulp.task('watch', () => {
 
 gulp.task('serve', () => {
   browserSync.init({
-    browser: ['chrome.exe'],
     server: {
       baseDir: './build/'
-    }
+    },
+    open: false
   });
 
   browserSync.watch(paths.reloadWatch.css).on('change', reload);
