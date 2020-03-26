@@ -2,6 +2,7 @@
   "name": "social_network",
   "version": "1.0.0",
   "scripts": {
+    "serve": "browser-sync start --no-open --server --files \"build/css/*.css, build/js/*.js, **/*.html, !node_modules/**/*.html\"",
     "start": "gulp",
     "clean": "gulp clean",
     "build": "gulp build",
