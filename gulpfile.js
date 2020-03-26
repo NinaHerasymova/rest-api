@@ -190,7 +190,7 @@ gulp.task('serve', () => {
     server: {
       baseDir: './build/'
     },
-    port: 8080,
+    port: 300,
     notify: false
   });
 
