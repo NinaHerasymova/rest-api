@@ -187,6 +187,7 @@ gulp.task('watch', () => {
 
 gulp.task('serve', () => {
   browserSync.init({
+    browser: ['chrome.exe'],
     server: {
       baseDir: './build/'
     }
