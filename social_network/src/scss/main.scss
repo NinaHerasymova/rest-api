@@ -111,7 +111,7 @@ main {
   filter: FlipH;
   -ms-filter: 'FlipH';
 }
-.icon {
+.icon { 
   color: #ccd6dd;
 }
 .link {
@@ -120,4 +120,13 @@ main {
 
 .row {
   margin: 0;
+}
+
+.twit-form {
+  width: 100%;
+}
+
+.flex-tweet {
+  display: flex;
+  flex-direction: column;
 }
