@@ -1,9 +1,54 @@
 let createBtn = document.getElementById('add-tweet');
 let formTweet = document.querySelectorAll('.tweet-form');
-let searchInput = document.getElementById('search')
+let searchInput = document.getElementById('search');
 let roots = document.getElementById('root');
+const tabArr = document.querySelectorAll('.tabs');
+const tabs = document.querySelector('.topnav');
+const tabsContent = [document.querySelector('[data-twitts]'), document.querySelector('[data-following]'),
+                     document.querySelector('[data-followers]')]
+
 let time = new Date();
 let search = false;
+
+function tabsFunc() {
+  let tweetsClasses = tabsContent[0];
+  let followingClasses = tabsContent[1];
+  let followersClasses = tabsContent[2];
+  const tabVal = this.firstChild.nextSibling.innerText;
+  for(let tab of Object.entries(tabs.children)){
+    if(Boolean(tab[1].classList.value.includes('active')) === true){
+      tab[1].classList.value = tab[1].classList.value.replace('active', '')
+    }
+  }
+  switch (tabVal) {
+    case 'Tweets':
+      followersClasses.classList.remove('d-flex');
+      followersClasses.classList.add('d-none');
+      followingClasses.classList.remove('d-flex');
+      followingClasses.classList.add('d-none');
+      tweetsClasses.classList.remove('d-none');
+      tweetsClasses.classList.add('d-flex'); break;
+    case 'Following':
+      tweetsClasses.classList.remove('d-flex');
+      tweetsClasses.classList.add('d-none');
+      followersClasses.classList.remove('d-flex');
+      followersClasses.classList.add('d-none');
+      followingClasses.classList.remove('d-none');
+      followingClasses.classList.add('d-flex'); break;
+    case 'Followers':
+      tweetsClasses.classList.remove('d-flex');
+      tweetsClasses.classList.add('d-none');
+      followingClasses.classList.remove('d-flex');
+      followingClasses.classList.add('d-none');
+      followersClasses.classList.remove('d-none');
+      followersClasses.classList.add('d-flex'); break;
+  }
+
+  console.log(typeof this.className)
+  if(!!this.classList.value.indexOf('active')){
+    this.classList.value = this.classList.value.concat(' active');
+  }
+}
 
 function tweet() {
   if (formTweet[0].value === '') {
@@ -44,21 +89,25 @@ function tweet() {
   }
 }
 
-
-searchInput.addEventListener('keypress', e =>{
-  if(e.keyCode === 13){
+if(searchInput){
+  searchInput.addEventListener('keypress', e =>{
+    if(e.keyCode === 13){
       if(search === false){
-          search = searchInput.value;  
-          // client.innerHTML = `Your nickname ${user}`;
-          searchInput.value = '';
-          console.log(keyCode)
-          return
+        search = searchInput.value;
+        // client.innerHTML = `Your nickname ${user}`;
+        searchInput.value = '';
+        console.log(keyCode)
+        return
       }
       // if(input.value === ''){
       //   e.preventDefault()
       // }
       // input.value = ''
-  }
-})
+    }
+  })
+}
+
 
 createBtn.addEventListener('click', tweet);
+
+tabArr.forEach(tab =>tab.addEventListener('click', tabsFunc))

@@ -39,41 +39,35 @@
             <input class="form-control mr-sm-2 bg-white focus-none border-0" type="text"
                    placeholder="Search Twitter" aria-label="Search Twitter" />
             <i class="fas fa-search search text-muted"></i>
-            <button class="btn btn-secondary rounded-pill my-2 my-sm-0 bg-primary border-0 mr-3" type="button"
-                    data-toggle="modal" data-target=".modal-tweet">
-                <span class="text-light">Tweet</span>
+            <button
+                    class="btn btn-secondary rounded-pill my-2 my-sm-0 bg-primary border-0 mr-3"
+                    type="button"
+                    data-toggle="modal" data-target=".modal-tweet"
+            >
+                <span class="text-light font-weight-bold">Tweet</span>
             </button>
-            <a href="../index.html" class="nav-link text-muted">Logout</a>
+            <a href="../index.html" class="nav-link text-secondary font-weight-bold">Logout</a>
         </form>
     </div>
 </nav>
 <div class="row person-menu-profile border-bottom bg-white">
-    <div class="col-md-8 col-lg-8 col-sm-12 person-menu-profile-tabs offset-3">
+    <div class="col-md-8 col-lg-8 col-sm-12 col-xl-7 person-menu-profile-tabs offset-md-3 offset-lg-3 offset-xl-4">
         <div class="row flex-row topnav">
-            <div
-                    class="active col-4 flex-column text-muted"
-                    style="font-size: 11px;"
-            >
-                Tweets <br/><span class="text-info h4">781</span>
+            <div class="tabs col-4 d-flex flex-column align-items-center text-secondary font-weight-bold">
+                <span>Tweets</span><span class="text-secondary font-weight-bold h4">0</span>
             </div>
-            <div
-                    class="col-4 flex-column text-muted"
-                    style="font-size: 11px;"
-            >
-                Following <br/><span class="text-info h4">164</span>
+            <div class="active tabs col-4 d-flex flex-column align-items-center text-secondary font-weight-bold">
+                <span>Following</span><span class="text-secondary font-weight-bold h4">2</span>
             </div>
-            <div
-                    class="col-4 flex-column text-muted"
-                    style="font-size: 11px;"
-            >
-                Followers <br/><span class="text-info h4">277</span>
+            <div class="tabs col-4 d-flex flex-column align-items-center text-secondary font-weight-bold">
+                <span>Followers</span><span class="text-secondary font-weight-bold h4">1</span>
             </div>
         </div>
-        <a href="#" class="text-muted person-menu-profile-tabs-edit">Edit Profile</a>
+        <a href="#" class="text-secondary font-weight-bold person-menu-profile-tabs-edit">Edit Profile</a>
     </div>
 </div>
 <main role="main" class="container-fluid profile-body-main bg-light">
-    <div class="row">
+    <div class="d-flex flex-column flex-md-row">
         <div class="col-12 col-md-4 col-lg-2 col-xl-2 offset-xl-1">
             <section class="d-flex flex-column position-relative col-12 profile-bio">
                 <div class="p-0 profile-bio-avatar-2 rounded-circle position-absolute">
@@ -86,28 +80,74 @@
 
             </section>
         </div>
-        <div class="col-12 col-md-6 col-lg-8 col-xl-8 d-flex mt-3">
-            <div class="col-12 col-md-6 col-lg-8 col-xl-8 d-flex">
-                <div class="card mx-2">
-                    <div class="user-card-img">
+        <div class="col-12 col-md-8 col-lg-10 col-xl-8 d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-6 col-lg-10 col-xl-8 d-flex mt-3 p-0">
+                <div class="col-12 col-md-10 col-lg-10 col-xl-12 d-none flex-wrap" data-twitts>
 
+                </div>
+                <div class="col-12 col-md-10 col-lg-10 col-xl-12 d-flex flex-wrap" data-following>
+                    <div class="card user-card mx-1 col-md-12 col-lg-5 col-xl-5 p-0 mt-2" >
+                        <div class="card-header user-card-header"></div>
+                        <div class="card-body d-flex pl-5">
+                            <div class="col-4 position-relative">
+                                <div class="p-0 card-bio-avatar rounded-pill position-absolute">
+                                    <img class="rounded-pill" src="../img/avatar.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title font-weight-bold">Maxim Zima</h5>
+                                <p class="card-text">
+                                    <a href="#" class="mr-1 text-secondary">@maxzima</a>
+                                    <span href="#" class="text-secondary bg-light">Follows you</span></p>
+                            </div>
+                        </div>
+                        <div class="card-body user-card-body-btn">
+                            <a href="#" class="btn user-card-body-btn-link text-light font-weight-bold rounded-pill">Following</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card user-card mx-1 col-md-12 col-lg-5 col-xl-5 p-0 mt-2" >
+                        <div class="card-header user-card-header"></div>
+                        <div class="card-body d-flex pl-5">
+                            <div class="col-4 position-relative">
+                                <div class="p-0 card-bio-avatar rounded-pill position-absolute">
+                                    <img class="rounded-pill" src="../img/avatar.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title font-weight-bold">Anton Diachenko</h5>
+                                <p class="card-text">
+                                    <a href="#" class="mr-1 text-secondary">@antowkaka</a>
+                                    <span href="#" class="text-secondary bg-light">Follows you</span></p>
+                            </div>
+                        </div>
+                        <div class="card-body user-card-body-btn">
+                            <a href="#" class="btn user-card-body-btn-link text-light font-weight-bold rounded-pill">Following</a>
+                        </div>
+                    </div>
+                    <div class="card user-card mx-1 col-md-12 col-lg-5 col-xl-5 p-0 mt-2" >
+                        <div class="card-header user-card-header"></div>
+                        <div class="card-body d-flex pl-5">
+                            <div class="col-4 position-relative">
+                                <div class="p-0 card-bio-avatar rounded-pill position-absolute">
+                                    <img class="rounded-pill" src="../img/avatar.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title font-weight-bold">Nina Herasymova</h5>
+                                <p class="card-text">
+                                    <a href="#" class="mr-1 text-secondary">@nina</a>
+                                    <span href="#" class="text-secondary bg-light">Follows you</span></p>
+                            </div>
+                        </div>
+                        <div class="card-body user-card-body-btn">
+                            <a href="#" class="btn user-card-body-btn-link text-light font-weight-bold rounded-pill">Following</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mx-2">
-                    <div class="card-header bg-primary"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="col-12 col-md-10 col-lg-10 col-xl-12 d-none flex-wrap" data-followers>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 col-xl-4 p-0 ml-2">
+            <div class="col-12 col-md-4 col-lg-2 col-xl-4 p-0 mt-3">
                 <section class="profile-follow">
                     <div class="col-12 p-3 profile-wrapper row container">
               <span class="h7 text-dark">
@@ -181,7 +221,6 @@
                 </section>
             </div>
         </div>
-
     </div>
 </main>
 <!-- /.container -->
@@ -346,7 +385,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <!-- /.Regidtartion -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script>
