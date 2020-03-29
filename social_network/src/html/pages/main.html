@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link
+            rel="shortcut icon"
+            type="image/png"
+            href="https://img.icons8.com/color/48/000000/twitter.png"
+    />
+    <!-- Font Awesome -->
+    <script
+            src="https://kit.fontawesome.com/9317b04617.js"
+            crossorigin="anonymous"
+    ></script>
+    <link href="../css/styles.css" rel="stylesheet"/>
+</head>
+<body class="home-body">
+<nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+    <div class="col-12 col-md-11 col-xl-10 offset-xl-1">
+        <button
+                class="navbar-toggler visible"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="#"
+                    ><i class="fas fa-home nav-icons"></i>Home
+                        <span class="sr-only">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="#"
+                    ><i class="fas fa-at nav-icons"></i>Connect</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="#"
+                    ><i class="fas fa-hashtag nav-icons"></i>Discover</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="./profile.html"
+                    ><i class="fas fa-user nav-icons"></i>Me</a
+                    >
+                </li>
+
+                <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>-->
+            </ul>
+            <div class="nav-item mr-auto ">
+                <a class="nav-link text-secondary font-weight-bold mx-auto" href="#"
+                ><i
+                        class="fab fa-twitter text-info nav-icons"
+                        style="color:#0084b4 !important"
+                ></i
+                ></a>
+            </div>
+            <form class="form-inline my-2 my-lg-0 right-side">
+                <input
+                        class="form-control mr-sm-2 bg-secondary rounded-pill placeholder"
+                        type="text"
+                        placeholder="Search"
+                        aria-label="Search"
+                        id = "search";
+                />
+                <i class="fas fa-search search"></i>
+                <button class="btn my-2 my-sm-0" type="submit">
+                    <i
+                            class="fas fa-envelope text-secondary nav-icons"
+                            style="color:#A3ACB2"
+                    ></i>
+                </button>
+                <button class="btn my-2 my-sm-0" type="submit">
+                    <i class="fas fa-cog text-secondary nav-icons"></i>
+                </button>
+                <button
+                        class="btn btn-secondary my-2 my-sm-0"
+                        type="button"
+                        style="background-color: #0084B4; border: none;"
+                        data-toggle="modal" data-target=".login-or-reg"
+                >
+                    <i class="fas fa-feather-alt text-light"></i>
+                </button>
+                <button
+                        class="btn btn-secondary my-2 my-sm-0"
+                        type="button"
+                        style="background-color: #0084B4; border: none;"
+                        data-toggle="modal" data-target=".modal-tweet"
+                >
+                    <i class="fas fa-feather-alt text-light"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<main role="main" class="container-fluid main">
+    <div class="row">
+        <div class="col-12 col-md-4 col-xl-3 offset-xl-1">
+            <section class="d-flex flex-column col-12 profile-bio">
+                <div class="col-12 p-0 profile-bio-avatar">
+                    <img src="../img/avatar.jpg"/>
+                </div>
+                <span class="h2 text-dark font-weight-light">Your Name hear</span>
+                <span class="h6 link">@YourHandleHere</span>
+                <span class="h6 text-muted mb-4"
+                >Text: Your bio goes here in max 140 characters. Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut lab.</span
+                >
+                <span class="d-flex h6 profile-bio-location"
+                ><i class="fas fa-map-marker-alt link"></i>Your location</span
+                >
+                <span class="d-flex h6 profile-bio-website link"
+                ><i class="fas fa-link"></i>yourwebsite.url</span
+                >
+            </section>
+            <section class="profile-tweet mb-3">
+                <div class="col-12 p-3 profile-tweet-wrapper">
+                    <div class="profile-tweet-wrapper-title link h6 m-0 p-3">
+                        Tweet to Your Name here
+                    </div>
+                </div>
+            </section>
+            <section class="profile-follow">
+                <div class="col-12 p-3 profile-wrapper">
+              <span class="h7 text-dark">
+                <span class="h4 font-weight-light">Who to follow</span>
+                &middot
+                <span class="link">Refresh</span>
+                &middot
+                <span class="link">View all</span>
+              </span>
+                    <div class="media text-muted pt-3">
+                        <svg
+                                class="bd-placeholder-img mr-2 rounded"
+                                width="48"
+                                height="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false"
+                                role="img"
+                                aria-label="Placeholder: 32x32"
+                        >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#007bff"></rect>
+                            <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+                        </svg>
+                        <p class="media-body d-flex flex-column pb-3 mb-0 small lh-125">
+                  <span class="h6">
+                    <strong class="text-dark">Giulio Bordonaro</strong>
+                    <span class="text-gray-dark"> @GiulioBx</span>
+                  </span>
+                            <button class="button-follow col-5 p-1">
+                                <i class="fas fa-user-plus link"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <div class="media text-muted pt-3">
+                        <svg
+                                class="bd-placeholder-img mr-2 rounded"
+                                width="48"
+                                height="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false"
+                                role="img"
+                                aria-label="Placeholder: 32x32"
+                        >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#343a40"></rect>
+                            <text x="50%" y="50%" fill="#343a40" dy=".3em">32x32</text>
+                        </svg>
+                        <p class="media-body d-flex flex-column pb-3 mb-0 small lh-125">
+                            <strong class="h6 text-dark">Interesting User</strong>
+                            <span class="text-gray-dark h6"> @User</span>
+                            <button class="button-follow col-5 p-1">
+                                <i class="fas fa-user-plus link"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <div class="media text-muted pt-3">
+                        <svg
+                                class="bd-placeholder-img mr-2 rounded"
+                                width="48"
+                                height="48"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid slice"
+                                focusable="false"
+                                role="img"
+                                aria-label="Placeholder: 32x32"
+                        >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#dc3545"></rect>
+                            <text x="50%" y="50%" fill="#dc3545" dy=".3em">32x32</text>
+                        </svg>
+                        <p
+                                class="media-body  d-flex flex-column pb-3 mb-0 small lh-125"
+                        >
+                            <strong class="h6 text-dark">Other User</strong>
+                            <span class="text-gray-dark h6"> @OtherUser</span>
+                            <button class="button-follow col-5 p-1">
+                                <i class="fas fa-user-plus link"></i> Follow
+                            </button>
+                        </p>
+                    </div>
+                    <span class="h7 text-dark">
+                <span class="link">Popular accounts</span>
+                &middot
+                <span class="link">Find friends</span>
+              </span>
+                </div>
+            </section>
+            <section class="profile-trends">
+                <div class="col-12 p-3 profile-wrapper d-flex flex-column">
+              <span class="h6 text-dark">
+                <span class="h4 font-weight-light">Worldwide Trends</span>
+                &middot
+                <span class="link">Change</span>
+              </span>
+                    <span class="link h6">#NewTwitter</span>
+                    <span class="link h6">#GBX</span>
+                    <span class="link h6">#graphicdesign</span>
+                    <span class="link h6">#mockup</span>
+                    <span class="link h6">#layout</span>
+                    <span class="link h6">#PSD</span>
+                </div>
+            </section>
+        </div>
+        <div class="col-12 col-md-8 col-xl-7 ">
+            <div class="row person-menu border-bottom">
+                <div class="col-md-8 col-lg-8 col-sm-12">
+                    <div class="row flex-row topnav">
+                        <div
+                                class="active col-6 col-md-4 col-lg-2 flex-column text-muted"
+                                style="font-size: 11px;"
+                        >
+                            TWEETS <br/><span class="text-info h4">781</span>
+                        </div>
+                        <div
+                                class="col-6 col-md-4 col-lg-3 flex-column text-muted"
+                                style="font-size: 11px;"
+                        >
+                            PHOTOS/VIDEOS<br/>
+                            <span class="text-info h4">62</span>
+                        </div>
+                        <div
+                                class="col-6 col-md-4 col-lg-2 flex-column text-muted"
+                                style="font-size: 11px;"
+                        >
+                            FOLLOWING <br/><span class="text-info h4">164</span>
+                        </div>
+                        <div
+                                class="col-6 col-md-4 col-lg-2 flex-column text-muted"
+                                style="font-size: 11px;"
+                        >
+                            FOLLOWERS <br/><span class="text-info h4">277</span>
+                        </div>
+                        <div
+                                class="col-6 col-md-4 col-lg-2 flex-column text-muted"
+                                style="font-size: 11px;"
+                        >
+                            FAVORITES <br/><span class="text-info h4">24</span>
+                        </div>
+                        <div
+                                class="col-6 col-md-4 col-lg-1 flex-column text-muted"
+                                style="font-size:    11px;"
+                        >
+                            VIEW <br/><span class="text-info h4">Lists</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                        class="following-button   col-8 col-md-4 col-lg-4 col-sm-5 d-flex justify-content-end"
+                >
+                    <div class="row">
+                        <div>
+                            <button
+                                    class="btn btn-primary col-md-8 col-lg-8 col-sm-8 col-8"
+                                    style="background-color: #0084B4;
+                    border: none"
+                            >
+                                Following
+                            </button>
+                            <button class="btn my-2 my-sm-0 p-0 col-md-2 col-lg-2 col-sm-2 col-2" type="submit">
+                                <i class="fas fa-cog text-secondary nav-icons"></i>
+                            </button>
+                            <button class="btn my-2 my-sm-0 p-0 col-md-1 col-lg-1 col-sm-1 col-1" type="submit">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid p-0">
+                <div class="row pt-3 pb-2 border-bottom">
+                    <p class="h6 col-md-3 col-lg-2 font-weight-bold">Tweets</p>
+                    <p class="h6 col-md-6 col-lg-4 text-muted text-decoration-none">
+                        Tweets and Replies
+                    </p>
+                </div>
+            </div>
+            <div id="root"></div>
+            <div class="tweet-big row container-fluid pl-0 pt-3">
+                <div class="container col-lg-9 border-dar tweet">
+                    <p class="text-muted text-left pt-4 pb-2">38m ago</p>
+                    <p class="h2 text-dark font-weight-normal">
+                        Twitter changes its layout, again. This one is a huge tweet.
+                        <span class="link">#NewTwitter</span>
+                    </p>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-share flip-icon pr-2 p icon"></i>150
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-retweet pr-2 icon"></i>35
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-star pr-2 icon"></i>50
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-ellipsis-h pl-1 icon "></i>
+                    </button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="tweet-image row container pl-0 pt-3">
+                <div class="container col-lg-9 border-dar tweet">
+                    <p class="text-muted text-left pt-4 pb-2">1h ago</p>
+                    <p class="h3 font-weight-normal text-dark">
+                        This is a tweet with a nice
+                        <span class="link">#picture</span> attached. Feel free to insert
+                        your favorite image here.
+                    </p>
+                    <img
+                            src="../img/tweet-two.png"
+                            class="img-fluid pl-0 pr-0 container-fluid"
+                    />
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-share flip-icon pr-2 p icon"></i>310
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-retweet pr-2 icon"></i>23
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-star pr-2 icon"></i>89
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-ellipsis-h pl-1 icon "></i>
+                    </button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="tweet-regular row container pl-0 pt-3">
+                <div class="container col-lg-9 border-dar tweet">
+                    <p class="text-muted text-left pt-4 pb-2">2h ago</p>
+                    <p class="h6 font-weight-normal text-dark">
+                        And now comes a regular tweet! Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim.
+                        <span class="link">#placeholdertext</span>
+                    </p>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-share flip-icon pr-2 p icon"></i>150
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-retweet pr-2 icon"></i>35
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-star pr-2 icon"></i>50
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-ellipsis-h pl-1 icon "></i>
+                    </button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="tweet-retweet row container pl-0 pt-3">
+                <div class="container col-lg-9 border-dar tweet">
+                    <p class="text-muted text-left pt-4 pb-2 h7 font-weight-normal">
+                        <i
+                                class="fas fa-retweet mr-2 p-1 icon bg-success"
+                                style="color:white; border-radius: 5px"
+                        ></i
+                        >RETWEETED ON FEB 13
+                    </p>
+
+                    <p class="h6 font-weight-normal link text-left mb-4">
+                        <img src="../img/retweet.png" class="mr-1"/>Giulio Bordonaro
+                        <span class="text-muted">@GiulioBX · Feb 13</span>
+                    </p>
+                    <p class="h6 font-weight-normal text-dark">
+                        I hope you find this
+                        <span class="link">#PSD #template</span> useful. You can find
+                        the latest version on
+                        <span class="link">http://j.mp/twitter2014gui</span> (if you
+                        have any suggestion please contact me)
+                    </p>
+
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-share flip-icon pr-2 p icon"></i>143
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4 "
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-retweet pr-2 icon"></i>31
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-star pr-2 icon"></i>76
+                    </button>
+                    <button
+                            class="btn my-3 p-0 pr-4"
+                            type="button"
+                            style="color:#8899a6"
+                    >
+                        <i class="fas fa-ellipsis-h pl-1 icon "></i>
+                    </button>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="footer container-fluid my-3 pl-0 ml-0">
+                <div class="row " style="color:#cccccc">
+                    <div class="col-lg-5 pb-1 m-0">
+                        <hr/>
+                    </div>
+                    <div class=" pb-1 mx-auto">
+                        <i class="fab fa-twitter m-0 p-0 fa-2x"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- /.container -->
+<!-- Modal -->
+<div class="modal fade login-or-reg" tabindex="-1" role="dialog" aria-labelledby="loginOrReg" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div style="background:#e3ecf1;" class="modal-content">
+            <div class="modal-header b-flex flex-column border-0">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <i class="fab fa-twitter text-primary h1"></i>
+                <h2 class="modal-title font-weight-bold mb-2" id="exampleModalLabel">See what`s happening in the world
+                    right now</h2>
+                <h5>Join Twitter today</h5>
+            </div>
+            <div class="modal-footer d-flex flex-column border-0">
+                <button type="button" class="btn btn-primary rounded-pill col-12" data-dismiss="modal"
+                        data-toggle="modal" data-target=".login">Login
+                </button>
+                <button type="button" class="btn btn-light rounded-pill col-12" data-dismiss="modal" data-toggle="modal"
+                        data-target=".reg">Registration
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.Modal -->
+<!-- Login -->
+<div class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login in to Twitter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <button type="button" class="btn btn-primary">Login in</button>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <h5>Need a twitter?</h5>
+                <button type="button" class="btn text-primary" data-dismiss="modal" data-toggle="modal"
+                        data-target=".reg">SIGN UP
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.login -->
+<!-- Registartion -->
+<div class="modal fade reg" tabindex="-1" role="dialog" aria-labelledby="regModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create an account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted"></span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Password</label>
+                        <input type="password" class="form-control"  placeholder="****" required="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address2">Password<span class="text-muted"></span></label>
+                        <input type="password" class="form-control"  placeholder="****">
+                    </div>
+
+
+                    <button class="btn btn-primary rounded-pill" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <h5>Already using twitter?</h5>
+                <button type="button" class="btn text-primary" data-dismiss="modal" data-toggle="modal"
+                        data-target=".login">Login
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-tweet" tabindex="-1" role="dialog" aria-labelledby="loginOrReg" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div style="background:#e3ecf1;" class="modal-content">
+            <div class="modal-header b-flex flex-column border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="card ">
+                <div class="card-body ">
+                  <textarea class="tweet-form" autofocus cols ="90%" maxlength="250" placeholder="text"
+                  ></textarea>
+                </div>
+            </div>
+            <div class="modal-footer d-flex flex-column border-0">
+                <!-- <button type="button" class="btn btn-primary rounded-pill col-12" data-dismiss="modal"
+                        data-toggle="modal" data-target=".login">Login
+                </button> -->
+                <button type="button" class="btn btn-secondary" id='add-tweet' data-dismiss="modal">SEND</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- /.Regidtartion -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        window.jQuery ||
+        document.write(
+            '<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
