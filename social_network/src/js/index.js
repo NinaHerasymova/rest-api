@@ -89,23 +89,27 @@ function tweet() {
   }
 }
 
-if(searchInput){
-  searchInput.addEventListener('keypress', e =>{
-    if(e.keyCode === 13){
-      if(search === false){
-        search = searchInput.value;
-        // client.innerHTML = `Your nickname ${user}`;
-        searchInput.value = '';
-        console.log(keyCode)
-        return
-      }
-      // if(input.value === ''){
-      //   e.preventDefault()
-      // }
-      // input.value = ''
-    }
-  })
-}
+// if(searchInput){                               SEARCH!!!!!!
+//   searchInput.addEventListener('keypress', e =>{
+//     if(e.keyCode === 13){
+//       if(search === false){
+//         search = searchInput.value;
+//         // client.innerHTML = `Your nickname ${user}`;
+//         searchInput.value = '';
+//         console.log(keyCode)
+//         return
+//       }
+//     }
+//   })
+// }
+
+$(document).ready(function () {
+
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
+
+  });
 
 
 createBtn.addEventListener('click', tweet);

@@ -23,25 +23,22 @@
     ></script>
     <link href="../css/styles.css" rel="stylesheet"/>
 </head>
-
-<!-- nav-menu -->
 <body class="search-body">
-    <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
-        <div class="col-12 col-md-11 col-xl-10 offset-xl-1">
+    <!-- HEADER -->
+    <!-- nav-menu -->
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
+        <div class="col-12 col-md-12 col-xl-10 offset-xl-1">
             <button
                     class="navbar-toggler visible"
                     type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+                    id="sidebarCollapse"
+                    data-toggle="modal"
+                    data-target=".side-bar-modal"
             >
-                <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-list text-white"></i>
             </button>
-    
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto"> 
                     <li class="nav-item">
                         <a class="nav-link text-secondary font-weight-bold" href="#"
                         ><i class="fas fa-home nav-icons"></i>Home
@@ -57,9 +54,9 @@
                     ></i
                     ></a>
                 </div>
-                <form class="form-inline my-2 my-lg-0 right-side">
+                <form class="form-inline my-lg-0 right-side">
                     <input
-                            class="form-control mr-sm-2 bg-secondary rounded-pill placeholder"
+                            class="form-control mr-sm-2 bg-white focus-none"
                             type="text"
                             placeholder="Search"
                             aria-label="Search"
@@ -81,6 +78,70 @@
             </div>
         </div>
     </nav>
+
+    <!-- modal side-bar -->
+
+    <div class="modal fade side-bar-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg m-0">
+            <div class="modal-content">
+                <!-- Sidebar -->
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <i class="fas fa-user-circle user-avatar-side"></i>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="d-flex flex-column p-1 mt-4">
+                            <span class="h5 font-weight-bold m-0" style="color: #fff">Name</span>
+                            <span class="h6 link" style="color: #fff" >@username</span>
+                        </div>
+                        <div class="row">
+                            <div
+                                    class="text-center"
+                                    style="font-size: 1.3em; color: #fff"
+                            >
+                            <span class="text-info h4 pl-2">0</span> Following
+                            </div>
+                            <div
+                                    class="text-center"
+                                    style="font-size: 1.3em; color: #fff"
+                            >
+                            <span class="text-info h4 p-2">0</span>Followers
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Home 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Search</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER END -->
+
     <div class="container-fluid main-search">
         <div class="row">
             <div class="col-12 col-md-4 col-xl-3 offset-xl-1">
@@ -157,6 +218,21 @@
             </div>
         </div>
     </div>
+    <div class="search-hiden">
+        <div class="modal-body">
+            <form class="needs-validation" novalidate="">
+                <div class="col-12">
+                    <input type="text" class="form-control mobile-search" id="mobile-search" placeholder="Search Twitter">
+                    <button type="button" class="btn btn-outline-primary mt-3 pl-3 pr-3">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-hiden-title text-center mt-3">
+                        <h3>Search for people on twitter.</h3>
+                    </div>
+                </div>
+            </form>
+        </div>    
+    </div>
     <!-- modal -->
     <div class="modal fade modal-tweet" tabindex="-1" role="dialog" aria-labelledby="loginOrReg" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -168,18 +244,17 @@
                 </div>
                 <div class="card ">
                     <div class="card-body ">
-                      <textarea class="tweet-form" autofocus cols ="90%" maxlength="250" placeholder="text"
-                      ></textarea>
+                    <textarea class="tweet-form" autofocus cols ="90%" maxlength="250" placeholder="text"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer d-flex flex-column border-0">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill col-12" data-dismiss="modal"
-                            data-toggle="modal" data-target=".login">Login
-                    </button> -->
                     <button type="button" class="btn btn-secondary" id='add-tweet' data-dismiss="modal">SEND</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script>
     window.jQuery ||
